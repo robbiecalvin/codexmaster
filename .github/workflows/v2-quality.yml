@@ -1,0 +1,19 @@
+name: CodexMaster v2 Quality Checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -v
+      - run: python framework/v2/verify_manifest.py
+      - run: python framework/v2/components/installation-guide/tests/check_installation.py framework/v2
+      - run: python framework/v2/components/integration-test-suite/tests/check_framework.py framework/v2
+      - run: python framework/v2/components/integration-test-suite/tests/test_contract.py
+      - run: python -m unittest discover -s tests/v2 -v

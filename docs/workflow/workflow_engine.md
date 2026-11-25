@@ -1,3 +1,9 @@
+# Legacy reference — workflow-engine
+
+For active v2 policy use [canonical workflow-engine](../../framework/v2/skills/workflow-engine/SKILL.md). The original text below is retained for historical comparison only; conflicting rules are superseded.
+
+---
+
 # Workflow Engine System
 
 ## Purpose

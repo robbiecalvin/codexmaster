@@ -1,3 +1,9 @@
+# Legacy reference — task-router
+
+For active v2 policy use [canonical task-router](../../framework/v2/skills/task-router/SKILL.md). The original text below is retained for historical comparison only; conflicting rules are superseded.
+
+---
+
 # Task Router System
 
 ## Purpose

@@ -13,3 +13,7 @@ Import the verified portable distribution into framework/v2/ without replacing e
 
 ## Acceptance
 Only the three planned paths change in this commit; main remains at the baseline; existing project documents remain unchanged. Runtime enforcement and behavioral performance are not established by this policy commit.
+
+
+## Activation phase
+Approved baseline: `e59dcf32e06670a5d072137e19bc2c1b9ed4a9f9`. Native discovery, bootstrap, legacy policy reconciliation and deterministic CI are introduced. Live discovery and behavioral testing remain pending; no main merge or deployment authorized.

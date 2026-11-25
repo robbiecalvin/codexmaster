@@ -360,6 +360,7 @@
     "skills/workflow-engine/templates/workflow-run.yaml": "c405e73565870183ed35f18fafd2dcba1b7745292323cd84bd249dcad67582d9",
     "skills/workflow-engine/tests/test-cases.json": "13d60e23b93b7b5516b94db688497eb3d22a7ff7d35667b0cfa6d628fd33f3ab",
     "verify_manifest.py": "bc7e074de1425ef46f209a8656dbed1fe020300dcabbf658227d87b8d7541037",
-    "MIGRATION.md": "baebe2e8f06e2d4416aec0ba746c33db74fe55b2fb8adbf6346fb3d8345a761b"
+    "MIGRATION.md": "e916c75a8fed63acb05502e8097a01036cd832e5fa429813f007ca7fe0dcb7da",
+    "ACTIVATION.md": "5184f4b5292e5da004c1f0d1bef1cfe5724d74a0ce9b0ed86b1c71b10f776b8a"
   }
 }
