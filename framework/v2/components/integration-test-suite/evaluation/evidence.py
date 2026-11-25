@@ -2,7 +2,7 @@
 import hashlib
 from pathlib import Path
 
-def verify(record, root):
+def verify(record, root, criteria=None):
     if record.get("status") not in ("PASS", "FAIL", "BLOCKED", "NOT_RUN"):
         raise ValueError("invalid status")
     if record["status"] == "NOT_RUN":
@@ -19,6 +19,15 @@ def verify(record, root):
         assertions = record.get("assertions", [])
         if not assertions or any(a.get("status") != "PASS" or not a.get("criterion") or not a.get("evidence_paths") or not set(a["evidence_paths"]) <= {e["path"] for e in evidence} for a in assertions):
             raise ValueError("missing or unsupported acceptance assertions")
+    if criteria is not None and record["status"] == "PASS":
+        assertions = record.get("assertions", [])
+        by_id = {a.get("criterion"):a for a in assertions}
+        if len(by_id)!=len(assertions) or set(by_id)!={c["id"] for c in criteria}:
+            raise ValueError("required criteria missing or duplicated")
+        kinds = {e["path"]:e.get("kind") for e in evidence}
+        for c in criteria:
+            if not set(c["evidence_kinds"]) <= {kinds.get(path) for path in by_id[c["id"]]["evidence_paths"]}:
+                raise ValueError("required evidence kinds missing")
     root = Path(root).resolve()
     for item in evidence:
         path = (root / item["path"]).resolve()

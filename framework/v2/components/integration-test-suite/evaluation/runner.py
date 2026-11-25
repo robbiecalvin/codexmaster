@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 from evidence import verify
 from schema import validate
+from fixtures import provision
 from metrics import telemetry
 from report import render, regressions
 
@@ -31,13 +32,13 @@ def checked(path, evidence_root, config):
         if key in attempts:
             raise ValueError("duplicate task attempt")
         attempts.add(key)
-        verify(r,evidence_root)
+        verify(r,evidence_root,next(item for item in catalog() if item["id"]==r["id"])["criteria"])
         telemetry(r)
     return records
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command",choices=["catalog","prompt","report","regression"])
+    parser.add_argument("command",choices=["catalog","prompt","prepare","report","regression"])
     parser.add_argument("--id")
     parser.add_argument("--records")
     parser.add_argument("--config")
@@ -47,6 +48,10 @@ def main():
     args = parser.parse_args()
     if args.command == "catalog":
         print(json.dumps(catalog(),indent=2))
+    elif args.command == "prepare":
+        item = next(r for r in catalog() if r["id"]==args.id)
+        root,metadata=provision(item,args.output)
+        print(json.dumps({"directory":str(root),**metadata},indent=2))
     elif args.command == "prompt":
         item = next(r for r in catalog() if r["id"]==args.id)
         print(item["prompt"])

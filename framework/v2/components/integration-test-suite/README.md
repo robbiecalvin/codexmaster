@@ -11,3 +11,6 @@ Behavioral scenarios are in `scenarios/behavioral.json`. Run each in an isolated
 
 ## Offline evaluation extension
 See [BENCHMARKING.md](BENCHMARKING.md) for the offline runner, evidence records, matched benchmarks, reporting and regression checks. Live tests remain NOT_RUN.
+
+## Fixture provisioning
+Run `python evaluation/runner.py prepare --id B01` to create a disposable directory and print input hashes, prompt and review criteria. Shared fixture families are starting inputs; scenario-specific host controls and independent review remain necessary. Do not treat provisioning as a behavioral pass.
