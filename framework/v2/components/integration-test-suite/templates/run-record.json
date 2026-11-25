@@ -1,0 +1,31 @@
+{
+  "id": "B01",
+  "run_id": "replace",
+  "version": "V2",
+  "revision": "",
+  "host": "",
+  "model": "",
+  "effort": "",
+  "pair_id": null,
+  "fixture_hash": "",
+  "prompt_hash": "",
+  "permissions_hash": "",
+  "criteria_hash": "",
+  "status": "NOT_RUN",
+  "synthetic": false,
+  "reviewer": "",
+  "review_notes": "",
+  "independent_review": false,
+  "evidence": [],
+  "validation": null,
+  "ratings": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "rating_rationales": [],
+  "telemetry": {}
+}

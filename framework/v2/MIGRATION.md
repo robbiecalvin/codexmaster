@@ -17,3 +17,6 @@ Only the three planned paths change in this commit; main remains at the baseline
 
 ## Activation phase
 Approved baseline: `e59dcf32e06670a5d072137e19bc2c1b9ed4a9f9`. Native discovery, bootstrap, legacy policy reconciliation and deterministic CI are introduced. Live discovery and behavioral testing remain pending; no main merge or deployment authorized.
+
+## Evaluation preparation
+Approved baseline 2101361a9eec3eae182a81593d7a888cea416b14. Offline evaluation tools and fixture recipes only; live discovery, behavioral execution and benchmarks remain pending.
