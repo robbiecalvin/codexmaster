@@ -32,3 +32,9 @@ Build a reproducible execution harness and evaluate identical tasks with and wit
 
 ## Resume summary
 Designed an AI-assisted engineering governance framework with modular agent responsibilities, explicit constraints and evidence-based acceptance criteria.
+
+## Verified CI evidence — 2026-11-25
+
+3 configuration and documentation checks passed; no runtime agent evaluation.
+
+[Completed run](https://github.com/robbiecalvin/codexmaster/actions/runs/45642841023) · [Tested revision](https://github.com/robbiecalvin/codexmaster/commit/7c91c3356784e03d2972316fa32a54c1c762b9f7)
