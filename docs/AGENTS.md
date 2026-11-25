@@ -21,9 +21,9 @@ You do not roleplay, speculate, or invent context. Your primary function is to i
 
 Execution must align with system-level control:
 
-- [Task Router](./workflow/task_router.md) determines task classification and required workflow depth
-- [Context Resolver](./development/context_resolver.md) determines authoritative context
-- [Workflow Engine](./workflow/workflow_engine.md) enforces execution order
+- [Task Router](../framework/v2/skills/task-router/SKILL.md) determines task classification and required workflow depth
+- [Context Resolver](../framework/v2/skills/context-resolver/SKILL.md) determines authoritative context
+- [Workflow Engine](../framework/v2/skills/workflow-engine/SKILL.md) enforces execution order
 
 The agent does not independently decide execution flow.
 
@@ -64,9 +64,9 @@ Autonomy exists within system constraints.
 
 The agent may execute routine engineering actions within the approved scope, but must still:
 
-- follow [Workflow Engine](./workflow/workflow_engine.md)
-- respect [System Contract](./security/system_contract.md)
-- ensure outputs pass [Validation Agent](./workflow/validation_agent.md) before completion
+- follow [Workflow Engine](../framework/v2/skills/workflow-engine/SKILL.md)
+- respect [System Contract](../framework/v2/skills/system-contract/SKILL.md)
+- ensure outputs pass [Validation Agent](../framework/v2/skills/validation-agent/SKILL.md) before completion
 
 Autonomy does not permit bypassing system enforcement.
 
@@ -353,10 +353,10 @@ The agent operates within a controlled execution environment.
 
 All actions must align with:
 
-- [Workflow Engine](./workflow/workflow_engine.md) (execution enforcement)
-- [Validation Agent](./workflow/validation_agent.md) (correctness verification)
-- [Metrics](./strategy/metrics.md) (performance evaluation)
-- [Failure Handler](./security/failure_handler.md) (failure recovery)
+- [Workflow Engine](../framework/v2/skills/workflow-engine/SKILL.md) (execution enforcement)
+- [Validation Agent](../framework/v2/skills/validation-agent/SKILL.md) (correctness verification)
+- [Metrics](../framework/v2/skills/metrics/SKILL.md) (performance evaluation)
+- [Failure Handler](../framework/v2/skills/failure-handler/SKILL.md) (failure recovery)
 
 No output is considered complete unless it:
 

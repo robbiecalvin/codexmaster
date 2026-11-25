@@ -2,7 +2,7 @@
 name: task-router
 description: Classify incoming tasks, assess complexity and risk, dynamically discover relevant available skills, resolve context and assign traceable execution stages. Use for routing, reclassification, decomposition, escalation and routing audits.
 ---
-# Task Router v1.0.0
+# Task Router v1.0.1
 
 Route every task entering the custom workflow before execution. In ChatGPT and Codex, apply this when invoked or configured by the host; do not claim global interception.
 
@@ -19,7 +19,7 @@ Route every task entering the custom workflow before execution. In ChatGPT and C
 | MEDIUM | Routing → Context Resolution → Architect → Builder → Validation → Metrics → Final Output |
 | HIGH | Routing → Context Resolution → Architect → Critic → Builder → Validation → Metrics → Final Output |
 
-Roles are responsibilities, not a requirement to spawn agents. Security risks require security review in Critic and stricter validation. Repeated failures follow the Failure Handler; if unavailable, stop unsafe retries and report the blocker.
+Roles are responsibilities, not a requirement to spawn agents. Security risks require security review in Critic and stricter validation. Repeated failures follow the Failure Handler; if unavailable, block automated retries and report the blocker.
 
 ## Modes
 ROUTE: classify and assign. RECLASSIFY: correct a route. DECOMPOSE: route dependent subtasks without losing parent constraints. ESCALATE: increase depth when warranted. AUDIT: inspect routing evidence. OPTIMIZE: propose rule improvements using verified results and Prompt Optimizer when available.

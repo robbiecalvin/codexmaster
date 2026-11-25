@@ -20,3 +20,6 @@ Approved baseline: `e59dcf32e06670a5d072137e19bc2c1b9ed4a9f9`. Native discovery,
 
 ## Evaluation preparation
 Approved baseline 2101361a9eec3eae182a81593d7a888cea416b14. Offline evaluation tools and fixture recipes only; live discovery, behavioral execution and benchmarks remain pending.
+
+## Hardening increment 1
+Governance references and retry fallback reconciled. Evaluation hardening and native discovery remain pending.

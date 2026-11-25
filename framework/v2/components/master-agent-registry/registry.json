@@ -90,8 +90,8 @@
       "prerequisite_roles": [],
       "entrypoint": "skills/task-router/SKILL.md",
       "source_package": "task-router.zip",
-      "source_sha256": "5d93d773379864e37a8adcc2bb1353976e20f4c8a7fe7197d7a881d676f0904e",
-      "version": "1.0.0",
+      "source_sha256": "edde0090920ea1eb3e377eb0d3f9847be13034cdb5518008f8937504c820ba53",
+      "version": "1.0.1",
       "lifecycle": "registered",
       "availability": "unknown",
       "host_adapters": [

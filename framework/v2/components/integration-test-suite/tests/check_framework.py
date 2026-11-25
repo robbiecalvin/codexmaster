@@ -27,7 +27,7 @@ def check(root):
         for f in ['AGENTS.md','components/agent-workflow/SKILL.md','components/master-agent-registry/SKILL.md']:
             record('entry '+f,bool(read(f)))
         master=read('AGENTS.md').decode(); engine=read('skills/workflow-engine/SKILL.md').decode()
-        record('fallback policy consistency','block automated retries' in master and 'If Failure Handler is unavailable, block automated retries' in engine and 'stop after a failed recovery attempt' not in engine,'Both instructions must block automated retries when handler unavailable')
+        record('fallback policy consistency','block automated retries' in master and 'If Failure Handler is unavailable, block automated retries' in engine and 'stop after a failed recovery attempt' not in engine and 'block automated retries' in read('skills/task-router/SKILL.md').decode(),'Both instructions must block automated retries when handler unavailable')
         ref=root/'codex/workflow/state_manager.md'
         record('template external state reference',ref.is_file() and bool(re.search(r'^#+ +Save a checkpoint\s*$',ref.read_text(),re.M|re.I)) and '../../skills/state-manager/SKILL.md#checkpoint-procedure' in ref.read_text() and '## Checkpoint procedure' in read('skills/state-manager/SKILL.md').decode(),'Compatibility target and authoritative checkpoint link required')
     except (OSError,ValueError,KeyError,TypeError) as e: record('layout readable',False,str(e))
