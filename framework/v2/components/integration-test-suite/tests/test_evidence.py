@@ -1,5 +1,6 @@
 import sys
 import hashlib
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -36,4 +37,14 @@ class Evidence(unittest.TestCase):
     def test_duplicate_evidence(self):
         self.r["evidence"]*=2
         with self.assertRaises(ValueError): verify(self.r,self.root)
+    def test_snapshot_check(self):
+        path=self.root/"snapshot"
+        criteria=[dict(id="outcome",evidence_kinds=["snapshot"],check="unchanged_snapshot")]
+        self.r["assertions"][0]["evidence_paths"]=["snapshot"]
+        for changed in (False,True):
+            path.write_text(json.dumps({"before":{"a":"a"*64},"after":{"a":("b" if changed else "a")*64}}))
+            self.r["evidence"]=[dict(path="snapshot",kind="snapshot",sha256=hashlib.sha256(path.read_bytes()).hexdigest())]
+            if changed:
+                with self.assertRaises(ValueError): verify(self.r,self.root,criteria)
+            else: verify(self.r,self.root,criteria)
 if __name__=="__main__": unittest.main()

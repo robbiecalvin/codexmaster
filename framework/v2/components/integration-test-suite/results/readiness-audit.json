@@ -2,7 +2,7 @@
   "status": "PENDING_VERIFICATION",
   "live_tests": "NOT_RUN",
   "findings": {
-    "A01": "PARTIAL_REVIEWER_ASSERTIONS_NOT_MACHINE_VERIFIED",
+    "A01": "MACHINE_SNAPSHOT_CHECK_PENDING_CI",
     "A02": "FIXTURE_TESTS_PASS_SUBSTANTIVE_REVIEW_PENDING",
     "A03": "OFFLINE_REVIEWED",
     "A04": "OFFLINE_REVIEWED",
@@ -13,9 +13,9 @@
     "A09": "OFFLINE_REVIEWED",
     "A10": "OFFLINE_REVIEWED",
     "A11": "OFFLINE_REVIEWED",
-    "A12": "CORRECTIVE_CHANGES_PENDING_VERIFICATION",
+    "A12": "OFFLINE_REVIEWED",
     "A13": "OFFLINE_REVIEWED",
     "A14": "OFFLINE_REVIEWED"
   },
-  "notes": "CI passed at 177999d. Live testing deferred by developer. Current schema changes require CI. A01 remains open for machine-verifiable assertions."
+  "notes": "CI passed at ee419e8. Snapshot comparison checks declared hash maps, not authenticity or completeness of capture. Live testing deferred."
 }

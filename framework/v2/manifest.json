@@ -362,9 +362,9 @@
     "verify_manifest.py": "bc7e074de1425ef46f209a8656dbed1fe020300dcabbf658227d87b8d7541037",
     "MIGRATION.md": "f3ef68f7fb1f6b998d6a8ed3a34a0d232225e5ed045d5b2866a5cd9c1e9020c3",
     "ACTIVATION.md": "379334f8b14b3024f42ba07e0b4242ad1b292b100481fe86cf8f27d04e1d7c82",
-    "components/integration-test-suite/scenarios/behavioral-fixtures.json": "7a5b2321c72930dd1537e8acd2c46da6a7aa98d3a33beb34cdf5a52f671b1e3d",
+    "components/integration-test-suite/scenarios/behavioral-fixtures.json": "265590739dff200be482beec7976b767927dec5621efa00dd79675dc1ae2c2d1",
     "components/integration-test-suite/scenarios/benchmarks.json": "d75ab7b36c5324c7f1ecb2a189c30eaef74195da51648a3a61c7635977ac664a",
-    "components/integration-test-suite/evaluation/evidence.py": "8700b9f2cd3e6305fdad01c492bfa9b6100f4d03f4b457ed8023d02c51b585c7",
+    "components/integration-test-suite/evaluation/evidence.py": "3630e9ee20ced2ce7ba7ef1b7077b0080b42f30bb7ad0cdd832631d2ad2afdb1",
     "components/integration-test-suite/evaluation/metrics.py": "34ae63fcd24e8666572287e4e3122ff6fffd52c0168d6948ab457395b87bf1b6",
     "components/integration-test-suite/evaluation/report.py": "1af53a3b65e0550bf81185dcb7f1e6eb3d3c1f36b50e704c8d75d06bb05b7e30",
     "components/integration-test-suite/evaluation/runner.py": "50574278d8ce5bf95d4125fdd693ea953e372d25670684b80fa451893b4e579a",
@@ -378,7 +378,7 @@
     "components/integration-test-suite/fixtures/library.json": "06e829e9473d73c939b2fc00ec14aef1465c47ac02fca570e3ed987c57a4f6b9",
     "components/integration-test-suite/evaluation/fixtures.py": "ebb4087e8e3756d97d7d3ec6dbf29b904c98a4faa36696bcb1c0d4a5a412c049",
     "components/integration-test-suite/tests/test_fixtures.py": "3baa71151e9de324d7f43938705a45df722e96b325e9c98258710fd614198238",
-    "components/integration-test-suite/tests/test_evidence.py": "ed67f0a66de235470178f9a5da44c6621e6592db95b9d42804fbf571d43a0d2a",
-    "components/integration-test-suite/results/readiness-audit.json": "fa16b52f3b06f1bc2a17884b4521e39a082a05e24d6a447a0c93787d32087e89"
+    "components/integration-test-suite/tests/test_evidence.py": "0426258c05ed7572abc1622b4ff22ff1bc851561190150dc83304d16ea067b5a",
+    "components/integration-test-suite/results/readiness-audit.json": "c061114fce60a01585c137f974dfcfeca9403ac1423a59231ded1eb087702686"
   }
 }

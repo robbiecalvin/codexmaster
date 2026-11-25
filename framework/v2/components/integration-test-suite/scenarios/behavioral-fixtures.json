@@ -22,6 +22,14 @@
           "trace",
           "snapshot"
         ]
+      },
+      {
+        "id": "unchanged_files",
+        "description": "Before and after file hash maps must match; reviewer confirms capture completeness.",
+        "evidence_kinds": [
+          "snapshot"
+        ],
+        "check": "unchanged_snapshot"
       }
     ]
   },
@@ -178,6 +186,14 @@
           "trace",
           "snapshot"
         ]
+      },
+      {
+        "id": "unchanged_files",
+        "description": "Before and after file hash maps must match; reviewer confirms capture completeness.",
+        "evidence_kinds": [
+          "snapshot"
+        ],
+        "check": "unchanged_snapshot"
       }
     ]
   },
@@ -594,6 +610,14 @@
           "trace",
           "snapshot"
         ]
+      },
+      {
+        "id": "unchanged_files",
+        "description": "Before and after file hash maps must match; reviewer confirms capture completeness.",
+        "evidence_kinds": [
+          "snapshot"
+        ],
+        "check": "unchanged_snapshot"
       }
     ]
   },

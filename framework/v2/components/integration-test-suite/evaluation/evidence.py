@@ -1,5 +1,6 @@
 """Offline evidence checks; reviewer assertions are not runtime enforcement."""
 import hashlib
+import json
 from pathlib import Path
 
 def verify(record, root, criteria=None):
@@ -37,3 +38,14 @@ def verify(record, root, criteria=None):
             raise ValueError("invalid evidence path")
         if hashlib.sha256(path.read_bytes()).hexdigest() != item["sha256"]:
             raise ValueError("evidence hash mismatch")
+
+    if criteria is not None and record["status"]=="PASS":
+        for c in criteria:
+            if c.get("check")=="unchanged_snapshot":
+                candidates=[e for e in evidence if e.get("kind")=="snapshot" and e["path"] in by_id[c["id"]]["evidence_paths"]]
+                if len(candidates)!=1:
+                    raise ValueError("one snapshot required")
+                snapshot=json.loads((root/candidates[0]["path"]).read_text())
+                before,after=snapshot.get("before"),snapshot.get("after")
+                if not isinstance(before,dict) or not before or before!=after or not all(isinstance(k,str) and isinstance(v,str) and len(v)==64 and all(ch in "0123456789abcdef" for ch in v) for k,v in before.items()):
+                    raise ValueError("unchanged snapshot assertion failed")
