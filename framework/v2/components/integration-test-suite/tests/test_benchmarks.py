@@ -30,4 +30,10 @@ class Hardening(unittest.TestCase):
         with self.assertRaises(ValueError): validate(dict(self.r,evidence=[1]),self.config)
     def test_invalid_telemetry_container(self):
         with self.assertRaises(ValueError): validate(dict(self.r,telemetry=[]),self.config)
+    def test_invalid_ratings(self):
+        with self.assertRaises(ValueError): validate(dict(self.r,ratings=[True]*6),self.config)
+    def test_unknown_telemetry(self):
+        with self.assertRaises(ValueError): validate(dict(self.r,telemetry={"unknown":None}),self.config)
+    def test_fractional_schema(self):
+        with self.assertRaises(ValueError): validate(dict(self.r,schema_version=2.0),self.config)
 if __name__=="__main__": unittest.main()
