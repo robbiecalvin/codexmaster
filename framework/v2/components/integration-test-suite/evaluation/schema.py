@@ -28,8 +28,20 @@ def validate(record, config):
                 raise ValueError("missing "+key)
     if record.get("validation") not in (None,"PASS","FAIL","BLOCKED"):
         raise ValueError("invalid validation")
+    for key in ("telemetry","telemetry_provenance"):
+        if not isinstance(record.get(key,{}),dict):
+            raise ValueError("invalid "+key)
+    for key in ("evidence","assertions","ratings","rating_rationales"):
+        if not isinstance(record.get(key,[]),list):
+            raise ValueError("invalid "+key)
+    for item in record.get("evidence",[]):
+        if not isinstance(item,dict) or not isinstance(item.get("path"),str) or not digest(item.get("sha256")):
+            raise ValueError("invalid evidence item")
+    for item in record.get("assertions",[]):
+        if not isinstance(item,dict) or not isinstance(item.get("criterion"),str) or item.get("status") not in ("PASS","FAIL","BLOCKED") or not isinstance(item.get("evidence_paths"),list) or not all(isinstance(x,str) for x in item["evidence_paths"]):
+            raise ValueError("invalid assertion")
     for key,value in record.get("telemetry",{}).items():
         if value is not None:
             source=record.get("telemetry_provenance",{}).get(key,{})
-            if not all(isinstance(source.get(k),str) and source[k].strip() for k in ("source","unit","scope")):
+            if not isinstance(source,dict) or not all(isinstance(source.get(k),str) and source[k].strip() for k in ("source","unit","scope")):
                 raise ValueError("missing telemetry provenance")

@@ -20,7 +20,7 @@ def compare(records):
         x,y = telemetry(a),telemetry(b)
         pairs.append({"pair_id":key,"id":a["id"],"v1_status":a["status"],"v2_status":b["status"],
                       "score_delta":score(b)-score(a) if a["status"] == b["status"] == "PASS" and score(a) is not None and score(b) is not None else None,
-                      "telemetry_delta":{k:y[k]-x[k] if x[k] is not None and y[k] is not None else None for k in x}})
+                      "telemetry_delta":{k:y[k]-x[k] if x[k] is not None and y[k] is not None and a.get("telemetry_provenance",{}).get(k) and a.get("telemetry_provenance",{}).get(k)==b.get("telemetry_provenance",{}).get(k) else None for k in x}})
     return pairs
 
 def regressions(old, new):

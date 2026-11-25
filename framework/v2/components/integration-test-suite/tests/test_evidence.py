@@ -33,4 +33,7 @@ class Evidence(unittest.TestCase):
     def test_missing_file(self):
         (self.root/"trace").unlink()
         with self.assertRaises(ValueError): verify(self.r,self.root)
+    def test_duplicate_evidence(self):
+        self.r["evidence"]*=2
+        with self.assertRaises(ValueError): verify(self.r,self.root)
 if __name__=="__main__": unittest.main()

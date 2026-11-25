@@ -25,4 +25,13 @@ class Fixtures(unittest.TestCase):
             name=next(iter(x["files"]))
             (a/name).write_text("changed")
             self.assertNotEqual((a/name).read_bytes(),(b/name).read_bytes())
+    def test_benchmark_sources(self):
+        from fixtures import material
+        items={r["id"]:r for r in catalog()}
+        for scenario,name in (("P02","caller.py"),("P04","auth.py"),("P07","test_parser.py"),("P09","unrelated.py")):
+            self.assertIn(name,material(items[scenario])[0])
+    def test_unknown_retry(self):
+        from fixtures import material
+        item=next(r for r in catalog() if r["id"]=="B16")
+        self.assertIsNone(json.loads(material(item)[0]["retry.json"])["attempts"])
 if __name__=="__main__": unittest.main()

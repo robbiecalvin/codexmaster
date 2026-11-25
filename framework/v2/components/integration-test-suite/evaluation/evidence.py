@@ -28,6 +28,8 @@ def verify(record, root, criteria=None):
         for c in criteria:
             if not set(c["evidence_kinds"]) <= {kinds.get(path) for path in by_id[c["id"]]["evidence_paths"]}:
                 raise ValueError("required evidence kinds missing")
+    if len({e["path"] for e in evidence}) != len(evidence):
+        raise ValueError("duplicate evidence path")
     root = Path(root).resolve()
     for item in evidence:
         path = (root / item["path"]).resolve()

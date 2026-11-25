@@ -26,4 +26,8 @@ class Hardening(unittest.TestCase):
         data,_=render([r])
         self.assertEqual(data["by_version"]["V2"]["counts"]["PASS"],1)
         self.assertEqual(data["by_version"]["V1"]["counts"]["PASS"],0)
+    def test_invalid_nested(self):
+        with self.assertRaises(ValueError): validate(dict(self.r,evidence=[1]),self.config)
+    def test_invalid_telemetry_container(self):
+        with self.assertRaises(ValueError): validate(dict(self.r,telemetry=[]),self.config)
 if __name__=="__main__": unittest.main()
