@@ -15,6 +15,10 @@ def verify(record, root):
         raise ValueError("missing evidence")
     if record["status"] == "PASS" and record.get("independent_review") is not True:
         raise ValueError("PASS requires independent review")
+    if record.get("schema_version") == 2 and record["status"] == "PASS":
+        assertions = record.get("assertions", [])
+        if not assertions or any(a.get("status") != "PASS" or not a.get("criterion") or not a.get("evidence_paths") or not set(a["evidence_paths"]) <= {e["path"] for e in evidence} for a in assertions):
+            raise ValueError("missing or unsupported acceptance assertions")
     root = Path(root).resolve()
     for item in evidence:
         path = (root / item["path"]).resolve()

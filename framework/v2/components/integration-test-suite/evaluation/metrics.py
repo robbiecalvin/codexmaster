@@ -28,7 +28,8 @@ def telemetry(record):
 def summarize(records):
     real = [r for r in records if r.get("synthetic") is False]
     scores = [s for r in real if r["status"] == "PASS" and (s := score(r)) is not None]
+    measurements = [telemetry(r) for r in real]
     return {"counts": {s: sum(r["status"] == s for r in real) for s in ("PASS","FAIL","BLOCKED","NOT_RUN")},
             "eligible_count": len(scores), "mean_score": mean(scores) if scores else None,
             "telemetry": {k: {"count": len(v), "mean": mean(v) if v else None}
-                          for k in FIELDS if (v := [telemetry(r)[k] for r in real if telemetry(r)[k] is not None]) is not None}}
+                          for k in FIELDS if (v := [m[k] for m in measurements if m[k] is not None]) is not None}}

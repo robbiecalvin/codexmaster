@@ -364,13 +364,16 @@
     "ACTIVATION.md": "5184f4b5292e5da004c1f0d1bef1cfe5724d74a0ce9b0ed86b1c71b10f776b8a",
     "components/integration-test-suite/scenarios/behavioral-fixtures.json": "c898d8784d719ab73c10b703752b5361c7f997f0ce126818c1aaabcca1baf205",
     "components/integration-test-suite/scenarios/benchmarks.json": "92bf6af43409f009c77631145215b5d88ab0c2396c0d754a9cc2c10a2eddfe88",
-    "components/integration-test-suite/evaluation/evidence.py": "8e3f54aca6fc60e9ab12b22d6abf1df98bc87afe4411eac089184351652fb31a",
-    "components/integration-test-suite/evaluation/metrics.py": "0d7f350eaffab706b62a932d2a7dac3263f3d33ed6d4e84e4cb0c8e323229f69",
-    "components/integration-test-suite/evaluation/report.py": "9447f42016d49b0817b092e78fdc858a6e1ac2faf42105030582fe4f08cb2019",
-    "components/integration-test-suite/evaluation/runner.py": "471e2a3f6a68541e67f8a46881511de11e31f79dde248ce7c3084f03f6c70f29",
+    "components/integration-test-suite/evaluation/evidence.py": "6c7b8f7fca86dc71e3bb74cfe07336697ad52eb2d71b75cea976c2a5a51c4d6b",
+    "components/integration-test-suite/evaluation/metrics.py": "c4cf020b34673b4bfefa4dc2945351e0a545460dc9c835ce0e9742b5be607829",
+    "components/integration-test-suite/evaluation/report.py": "98a7014d5f6c87bfac0118a66a496c56f9d31e1fd4ec4c26ca88ef313a8e93c2",
+    "components/integration-test-suite/evaluation/runner.py": "5e16e061e96d35141af667b2093b610d0aee9184eddb59876c72c8ed3740a1fb",
     "components/integration-test-suite/tests/test_evaluation.py": "e35e229a40e7a68c0bb9568cfeaf53f25a67b5bb619ce0543fea65ec0aea1758",
-    "components/integration-test-suite/templates/run-record.json": "6f814d5b857246d2128da711da2a70508e63721f93094a8ab8192bc15a760c8f",
-    "components/integration-test-suite/BENCHMARKING.md": "74a4ad49e6526b99e51939b7de8fa92815f27c24019900e3b798cb63e9f4bfd4",
-    "components/integration-test-suite/optimization-protocol.md": "fe5365a9da8b2f9041a97423b0dca1a61da33a5c89d3e6eb0c3e64c7258183e7"
+    "components/integration-test-suite/templates/run-record.json": "fb4debbe025559d576b3399bf4471161930684897e2dfabe542f84941d099a7e",
+    "components/integration-test-suite/BENCHMARKING.md": "2dc568a11568a783a20a94c11da8f995f9048b760f609b8285f80a7bc1a56cab",
+    "components/integration-test-suite/optimization-protocol.md": "fe5365a9da8b2f9041a97423b0dca1a61da33a5c89d3e6eb0c3e64c7258183e7",
+    "components/integration-test-suite/evaluation/schema.py": "e55a29f6a22ba5cdb480a5371615873c2eac02fd27721b0b5fea0e6c86343187",
+    "components/integration-test-suite/templates/evaluation-config.json": "2b34a77ff69a01d24cc0c5cfdcd9577abfc101fb4ee4da8c69c14b42a9856323",
+    "components/integration-test-suite/tests/test_benchmarks.py": "973c06842c942f0af68cbe328916786cdee96e1c30d8e7b0cf1b8116f840e5e8"
   }
 }

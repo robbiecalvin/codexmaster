@@ -3,6 +3,7 @@ import argparse
 import json
 from pathlib import Path
 from evidence import verify
+from schema import validate
 from metrics import telemetry
 from report import render, regressions
 
@@ -14,9 +15,10 @@ def load(path):
 def catalog():
     return load(ROOT/"scenarios/behavioral-fixtures.json")+load(ROOT/"scenarios/benchmarks.json")
 
-def checked(path, evidence_root):
+def checked(path, evidence_root, config):
     records = load(path)
     seen = set()
+    attempts = set()
     ids = {r["id"] for r in catalog()}
     for r in records:
         if r.get("id") not in ids or type(r.get("synthetic")) is not bool:
@@ -24,6 +26,11 @@ def checked(path, evidence_root):
         if not r.get("run_id") or r["run_id"] in seen:
             raise ValueError("missing or duplicate run ID")
         seen.add(r["run_id"])
+        validate(r,config)
+        key = (r["id"],r["version"],r["task_id"],r["attempt"])
+        if key in attempts:
+            raise ValueError("duplicate task attempt")
+        attempts.add(key)
         verify(r,evidence_root)
         telemetry(r)
     return records
@@ -33,6 +40,7 @@ def main():
     parser.add_argument("command",choices=["catalog","prompt","report","regression"])
     parser.add_argument("--id")
     parser.add_argument("--records")
+    parser.add_argument("--config")
     parser.add_argument("--baseline")
     parser.add_argument("--evidence-root",default=".")
     parser.add_argument("--output")
@@ -43,9 +51,10 @@ def main():
         item = next(r for r in catalog() if r["id"]==args.id)
         print(item["prompt"])
     else:
-        records = checked(args.records,args.evidence_root)
+        config = load(args.config)
+        records = checked(args.records,args.evidence_root,config)
         if args.command == "regression":
-            failures = regressions(checked(args.baseline,args.evidence_root),records)
+            failures = regressions(checked(args.baseline,args.evidence_root,config),records)
             print(json.dumps(failures))
             return int(bool(failures))
         data,html = render(records)

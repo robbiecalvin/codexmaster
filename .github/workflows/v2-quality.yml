@@ -18,3 +18,4 @@ jobs:
       - run: python framework/v2/components/integration-test-suite/tests/test_contract.py
       - run: python -m unittest discover -s tests/v2 -v
       - run: python framework/v2/components/integration-test-suite/tests/test_evaluation.py
+      - run: python framework/v2/components/integration-test-suite/tests/test_benchmarks.py

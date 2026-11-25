@@ -24,11 +24,22 @@ def compare(records):
     return pairs
 
 def regressions(old, new):
-    baseline = {(r["id"],r.get("version")):r for r in old if r.get("synthetic") is False}
-    current = {(r["id"],r.get("version")):r for r in new if r.get("synthetic") is False}
-    return [list(k) for k,r in baseline.items() if r["status"]=="PASS" and (k not in current or current[k]["status"]!="PASS")]
+    def index(records):
+        result = {}
+        for r in records:
+            if r.get("synthetic") is not False:
+                continue
+            key = (r["id"],r.get("version"))
+            if key in result:
+                raise ValueError("ambiguous regression input")
+            result[key] = r
+        return result
+    baseline,current = index(old),index(new)
+    return [list(k) for k,r in baseline.items() if r["status"]=="PASS" and
+            (k not in current or current[k]["status"]!="PASS" or
+             (score(r) is not None and (score(current[k]) is None or score(current[k]) < score(r))))]
 
 def render(records):
-    data = {"summary":summarize(records),"matched_pairs":compare(records)}
+    data = {"summary":summarize(records),"by_version":{v:summarize([r for r in records if r.get("version")==v]) for v in ("V1","V2")},"matched_pairs":compare(records)}
     html = '<!doctype html><meta charset="utf-8"><title>CodexMaster evaluation</title><h1>CodexMaster evaluation</h1><p>Observed records only; missing data is null.</p><pre>'+escape(json.dumps(data,indent=2))+'</pre>'
     return data,html
