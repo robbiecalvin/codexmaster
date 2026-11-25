@@ -46,4 +46,22 @@ class Evaluation(unittest.TestCase):
         self.assertEqual(len(compare([r,dict(r,version="V2")])),1)
         self.assertEqual(compare([r,dict(r,version="V2",model="other")]),[])
 
+    def test_mixed_summary(self):
+        records=[dict(status="PASS",synthetic=False,version=v) for v in ("V1","V2")]
+        self.assertIsNone(render(records)[0]["summary"])
+    def test_unknown_measurement(self):
+        self.assertIsNone(summarize([])["telemetry"]["input_tokens"]["mean"])
+    def test_invalid_boolean(self):
+        with self.assertRaises(ValueError): telemetry({"telemetry":{"input_tokens":True}})
+    def test_invalid_fraction(self):
+        with self.assertRaises(ValueError): telemetry({"telemetry":{"tool_calls":1.5}})
+    def test_attempt_count(self):
+        r=dict(id="P01",task_id="t",status="FAIL",synthetic=False)
+        self.assertEqual(summarize([r,r])["task_count"],1)
+        self.assertEqual(summarize([r,r])["attempt_count"],2)
+    def test_dashboard(self):
+        _,html=render([])
+        self.assertIn("<table>",html)
+        self.assertNotIn("<pre>",html)
+
 if __name__=="__main__": unittest.main(verbosity=2)

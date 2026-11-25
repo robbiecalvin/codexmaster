@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from evidence import verify
 from schema import validate
-from fixtures import provision
+from fixtures import provision, material
 from metrics import telemetry
 from report import render, regressions
 
@@ -32,7 +32,13 @@ def checked(path, evidence_root, config):
         if key in attempts:
             raise ValueError("duplicate task attempt")
         attempts.add(key)
-        verify(r,evidence_root,next(item for item in catalog() if item["id"]==r["id"])["criteria"])
+        item=next(item for item in catalog() if item["id"]==r["id"])
+        if r["status"]!="NOT_RUN":
+            _,prepared=material(item)
+            for field in ("fixture_hash","prompt_hash","criteria_hash"):
+                if r.get(field)!=prepared[field]:
+                    raise ValueError("prepared input mismatch: "+field)
+        verify(r,evidence_root,item["criteria"])
         telemetry(r)
     return records
 
@@ -54,7 +60,7 @@ def main():
         print(json.dumps({"directory":str(root),**metadata},indent=2))
     elif args.command == "prompt":
         item = next(r for r in catalog() if r["id"]==args.id)
-        print(item["prompt"])
+        print(material(item)[1]["prompt"])
     else:
         config = load(args.config)
         records = checked(args.records,args.evidence_root,config)

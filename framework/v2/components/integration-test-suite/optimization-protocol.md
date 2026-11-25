@@ -1,2 +1,4 @@
 # Optimization protocol
 Auditor reviews observed failures, evidence quality, matched comparisons and resource usage. Record findings and unknown causes in existing State Manager records. Route root-cause investigation through Debugging Playbook and Change Planner. Prompt Optimizer only handles evidenced prompt causation. Obtain revision-bound developer approval before edits. Preserve shared retry limits. Revalidate affected scenarios and required checks, then compare against the pinned baseline. Never promote a baseline or claim improvement without evidence and approval.
+
+Reject mismatched prepared-input hashes, missing provenance and ambiguous regression records. Preserve all attempts. Compare only equivalent conditions; unknown measurements are not zero. Never infer live discovery from CI.
