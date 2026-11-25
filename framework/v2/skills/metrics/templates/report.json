@@ -1,0 +1,37 @@
+{
+  "task_id": null,
+  "revision": null,
+  "validation_status": null,
+  "eligibility": null,
+  "ineligibility_reason": null,
+  "ratings": {
+    "accuracy": {
+      "score": null,
+      "evidence": []
+    },
+    "completeness": {
+      "score": null,
+      "evidence": []
+    },
+    "clarity": {
+      "score": null,
+      "evidence": []
+    },
+    "efficiency": {
+      "score": null,
+      "evidence": []
+    },
+    "reliability": {
+      "score": null,
+      "evidence": []
+    },
+    "constraint_compliance": {
+      "score": null,
+      "evidence": []
+    }
+  },
+  "total": null,
+  "tier": null,
+  "decision": null,
+  "rubric_version": "1.0.0"
+}

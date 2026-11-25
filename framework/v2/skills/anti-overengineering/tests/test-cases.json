@@ -1,0 +1,38 @@
+[
+  {
+    "id": "anti-overengineering-1",
+    "scenario": "Single-use wrapper without benefit",
+    "expected": "REVISE",
+    "status": "not_run"
+  },
+  {
+    "id": "anti-overengineering-2",
+    "scenario": "Existing utility solves task",
+    "expected": "reuse",
+    "status": "not_run"
+  },
+  {
+    "id": "anti-overengineering-3",
+    "scenario": "Necessary security boundary",
+    "expected": "preserve",
+    "status": "not_run"
+  },
+  {
+    "id": "anti-overengineering-4",
+    "scenario": "Multiple duplicated implementations with maintenance burden",
+    "expected": "evaluate helper",
+    "status": "not_run"
+  },
+  {
+    "id": "anti-overengineering-5",
+    "scenario": "Unjustified framework dependency",
+    "expected": "reject",
+    "status": "not_run"
+  },
+  {
+    "id": "anti-overengineering-6",
+    "scenario": "Simplification changes public behavior",
+    "expected": "block pending explicit authorization",
+    "status": "not_run"
+  }
+]

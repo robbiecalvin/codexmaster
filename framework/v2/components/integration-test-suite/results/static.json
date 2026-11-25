@@ -1,0 +1,287 @@
+[
+  {
+    "check": "registry identity",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "mandatory governance",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill instruction-priority",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill operational-guardrails",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill system-contract",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill model-behavioral-instructions",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill task-router",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill context-resolver",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill workflow-engine",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill state-manager",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill architect",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill critic-agent",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill builder-agent",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill validation-agent",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill metrics",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill failure-handler",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill debugging-playbook",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill security-agent",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill auditor-agent",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill prompt-optimizer",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill resource-management-efficiency",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill repository-orientation",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill environment-specification",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill code-style",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill anti-overengineering",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill change-planner",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill developer-workflow",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill engineering-task-template",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill pull-request-rules",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill project-kickoff",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill design-system",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill design-memory",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill design-variation-engine",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill modular-agents",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill system-architecture-map",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "skill ai-agent-development-framework",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "registry metadata baseline",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "prerequisites",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/access_matrix.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/application_architecture.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/application_diagram.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/application_security.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/booking_lifecycle.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/data_model.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/decisions.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/deployment.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/launch_acceptance.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/next_steps.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/page_inventory.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/pricing_and_payments.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/product_spec.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "template codex/project/project_context.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "entry AGENTS.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "entry components/agent-workflow/SKILL.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "entry components/master-agent-registry/SKILL.md",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "check": "fallback policy consistency",
+    "status": "PASS",
+    "detail": "Both instructions must block automated retries when handler unavailable"
+  },
+  {
+    "check": "template external state reference",
+    "status": "PASS",
+    "detail": "Compatibility target and authoritative checkpoint link required"
+  }
+]

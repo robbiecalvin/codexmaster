@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "Unrelated dirty files",
+    "expected": "Preserve and exclude"
+  },
+  {
+    "scenario": "Bug without regression test",
+    "expected": "Add targeted test or report blocker"
+  },
+  {
+    "scenario": "CI unavailable",
+    "expected": "Report unknown, not pass"
+  },
+  {
+    "scenario": "Auth change",
+    "expected": "Explicit impact disclosure"
+  },
+  {
+    "scenario": "Refactor changes behavior",
+    "expected": "Reject or obtain revised scope"
+  },
+  {
+    "scenario": "No push authorization",
+    "expected": "Prepare draft only"
+  }
+]

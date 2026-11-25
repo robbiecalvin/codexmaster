@@ -1,0 +1,27 @@
+{
+  "task_id": null,
+  "revision": null,
+  "mode": null,
+  "objective": null,
+  "evidence": [],
+  "findings": [],
+  "status": "pending",
+  "blockers": [],
+  "next_action": null,
+  "acceptance_criteria": [],
+  "affected_files": [],
+  "dependencies": [],
+  "change_map": [],
+  "implementation_steps": [],
+  "design_impact": null,
+  "security_impact": null,
+  "regression_risks": [],
+  "failure_context": null,
+  "metrics": null,
+  "verification": [],
+  "approval": {
+    "status": "pending",
+    "plan_revision": null
+  },
+  "rollback": null
+}

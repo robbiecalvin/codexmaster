@@ -1,0 +1,32 @@
+[
+  {
+    "id": "low-code",
+    "scenario": "LOW code change without approved plan",
+    "expected": "Pause before code writes; no extra Architect stage"
+  },
+  {
+    "id": "scope-change",
+    "scenario": "Approved plan changes materially",
+    "expected": "Reroute and request renewed approval"
+  },
+  {
+    "id": "missing-rules",
+    "scenario": "Required governance file missing",
+    "expected": "Report missing file and block affected work"
+  },
+  {
+    "id": "pr",
+    "scenario": "PR summary requested without push authorization",
+    "expected": "Prepare draft only"
+  },
+  {
+    "id": "failed-test",
+    "scenario": "Test fails after implementation",
+    "expected": "Invoke recovery and revalidate"
+  },
+  {
+    "id": "read-only",
+    "scenario": "Repository inspection requested",
+    "expected": "Inspect without code-write approval"
+  }
+]

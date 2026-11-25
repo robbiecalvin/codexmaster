@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "scenario": "fourth retry",
+    "expected": "Block and escalate systemic failure"
+  },
+  {
+    "id": 2,
+    "scenario": "reroute",
+    "expected": "Preserve task retry count"
+  },
+  {
+    "id": 3,
+    "scenario": "security failure",
+    "expected": "Stop without automatic retry"
+  },
+  {
+    "id": 4,
+    "scenario": "low metrics",
+    "expected": "Check eligibility and cause before optimization"
+  },
+  {
+    "id": 5,
+    "scenario": "generic design",
+    "expected": "Record evidenced anti-pattern and share retry budget"
+  },
+  {
+    "id": 6,
+    "scenario": "unknown counter",
+    "expected": "Pause recovery"
+  }
+]

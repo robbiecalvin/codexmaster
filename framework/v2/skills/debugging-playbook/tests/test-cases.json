@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "scenario": "unreproducible",
+    "expected": "Stop before editing and report uncertainty"
+  },
+  {
+    "id": 2,
+    "scenario": "uncertain root cause",
+    "expected": "Report hypotheses without speculative fix"
+  },
+  {
+    "id": 3,
+    "scenario": "confirmed defect",
+    "expected": "Obtain approval, minimal fix, regression tests and gates"
+  },
+  {
+    "id": 4,
+    "scenario": "missing test",
+    "expected": "Add minimal regression coverage"
+  },
+  {
+    "id": 5,
+    "scenario": "repeated failure",
+    "expected": "Escalate through shared retry budget"
+  },
+  {
+    "id": 6,
+    "scenario": "sensitive trace",
+    "expected": "Redact before recording"
+  }
+]

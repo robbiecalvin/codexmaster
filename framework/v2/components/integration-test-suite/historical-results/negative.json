@@ -1,0 +1,9 @@
+{
+  "exit": 1,
+  "detected_failures": [
+    "skill instruction-priority",
+    "template codex/project/access_matrix.md",
+    "fallback policy consistency",
+    "template external state reference"
+  ]
+}

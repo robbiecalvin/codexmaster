@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "unchanged inputs",
+    "expected": "Resume next unfinished action"
+  },
+  {
+    "scenario": "changed revision",
+    "expected": "Recheck affected evidence"
+  },
+  {
+    "scenario": "no storage",
+    "expected": "Return portable checkpoint and disclose non-persistence"
+  },
+  {
+    "scenario": "conflicting decision",
+    "expected": "Link open question and ask owner when needed"
+  },
+  {
+    "scenario": "routine step",
+    "expected": "Avoid unnecessary checkpoint update"
+  },
+  {
+    "scenario": "concurrent edits",
+    "expected": "Reconcile without overwriting unrelated work"
+  }
+]

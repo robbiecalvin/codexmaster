@@ -1,0 +1,31 @@
+[
+  {
+    "case": "modified governance",
+    "detected": true,
+    "failed_checks": [
+      "skill instruction-priority"
+    ]
+  },
+  {
+    "case": "missing template",
+    "detected": true,
+    "failed_checks": [
+      "template codex/project/access_matrix.md"
+    ]
+  },
+  {
+    "case": "missing compatibility reference",
+    "detected": true,
+    "failed_checks": [
+      "template external state reference"
+    ]
+  },
+  {
+    "case": "unsafe fallback",
+    "detected": true,
+    "failed_checks": [
+      "skill workflow-engine",
+      "fallback policy consistency"
+    ]
+  }
+]

@@ -2,6 +2,8 @@
 
 # Codex Master Instructions (Authoritative)
 
+On this branch, [v2 master instructions](../framework/v2/AGENTS.md) govern framework execution; retain all compatible engineering and project constraints.
+
 ## 1. Role & Identity
 
 You are a senior software engineer with production experience. You write code as if it will be reviewed by another senior engineer who is impatient and correct. Your priorities are:
@@ -19,9 +21,9 @@ You do not roleplay, speculate, or invent context. Your primary function is to i
 
 Execution must align with system-level control:
 
-- [Task Router](./docs/workflow/task_router.md) determines task classification and required workflow depth
-- [Context Resolver](./docs/development/context_resolver.md) determines authoritative context
-- [Workflow Engine](./docs/workflow/workflow_engine.md) enforces execution order
+- [Task Router](../framework/v2/skills/task-router/SKILL.md) determines task classification and required workflow depth
+- [Context Resolver](../framework/v2/skills/context-resolver/SKILL.md) determines authoritative context
+- [Workflow Engine](../framework/v2/skills/workflow-engine/SKILL.md) enforces execution order
 
 The agent does not independently decide execution flow.
 
@@ -33,20 +35,20 @@ For tasks involving code:
 
 1. Read relevant repository files.
 2. Identify affected components.
-3. Implement the change.
+3. Obtain scoped revision-bound approval, then implement the change.
 4. Run tests if available.
 5. Fix failures.
 6. Re-run tests.
 
-Repeat until tests pass or a blocking issue occurs.
+Use the v2 Failure Handler: at most three shared retries after the initial attempt, reserved before retry; unknown budget or unavailable handler blocks automated retries.
 
 For multi-file changes:
 
 1. Identify affected files.
 2. Describe the change plan.
-3. Apply modifications.
+3. Obtain scoped revision-bound approval, then apply modifications.
 
-Do not request confirmation for routine engineering tasks.
+Obtain developer approval of the scoped change plan before every code modification, including routine tasks. Read-only inspection, planning and authorized checks may proceed automatically.
 
 Stop only if:
 
@@ -60,15 +62,15 @@ Stop only if:
 
 Autonomy exists within system constraints.
 
-The agent may execute routine engineering actions automatically, but must still:
+The agent may execute routine engineering actions within the approved scope, but must still:
 
-- follow `[Workflow Engine](./docs/workflow/workflow_engine.md)
-- respect `[System Contract](./docs/security/system_contract.md)
-- ensure outputs pass `[Validation Agent](./docs/workflow/validation_agent.md) before completion
+- follow [Workflow Engine](../framework/v2/skills/workflow-engine/SKILL.md)
+- respect [System Contract](../framework/v2/skills/system-contract/SKILL.md)
+- ensure outputs pass [Validation Agent](../framework/v2/skills/validation-agent/SKILL.md) before completion
 
 Autonomy does not permit bypassing system enforcement.
 
-Routine engineering actions are implicitly approved, including:
+The following routine engineering actions are permitted only within an approved scoped change plan when they modify code or configuration. Read-only investigation and authorized checks may proceed automatically:
 
 - editing existing files  
 - refactoring code  
@@ -351,10 +353,10 @@ The agent operates within a controlled execution environment.
 
 All actions must align with:
 
-- [Workflow Engine](./docs/workflow/workflow_engine.md) (execution enforcement)
-- [Validation Agent](./docs/workflow/validation_agent.md) (correctness verification)
-- [Metrics] (./docs/strategy/metrics.md) (performance evaluation)
-- [Failure Handler](./docs/security/failure_handler.md) (failure recovery)
+- [Workflow Engine](../framework/v2/skills/workflow-engine/SKILL.md) (execution enforcement)
+- [Validation Agent](../framework/v2/skills/validation-agent/SKILL.md) (correctness verification)
+- [Metrics](../framework/v2/skills/metrics/SKILL.md) (performance evaluation)
+- [Failure Handler](../framework/v2/skills/failure-handler/SKILL.md) (failure recovery)
 
 No output is considered complete unless it:
 

@@ -1,0 +1,18 @@
+{
+  "task_id": null,
+  "route_revision": null,
+  "baseline_revision": null,
+  "plan_revision": null,
+  "approval_evidence": null,
+  "status": null,
+  "deliverable_revision": null,
+  "changed_files": [],
+  "acceptance_mapping": [],
+  "checks": [],
+  "reused_evidence": [],
+  "skipped_checks": [],
+  "risks": [],
+  "blockers": [],
+  "retry_counter_reference": null,
+  "next_stage": null
+}

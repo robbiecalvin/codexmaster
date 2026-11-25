@@ -1,0 +1,19 @@
+{
+  "task_id": null,
+  "objective": null,
+  "affected_modules": [],
+  "constraints": [],
+  "acceptance_criteria": [],
+  "plan_revision": 1,
+  "steps": [],
+  "risks": [],
+  "verification": [],
+  "rollback": null,
+  "approval": {
+    "status": "pending",
+    "owner": null,
+    "evidence": null,
+    "revision": null
+  },
+  "pr_summary": null
+}

@@ -1,3 +1,9 @@
+# Legacy reference — metrics
+
+For active v2 policy use [canonical metrics](../../framework/v2/skills/metrics/SKILL.md). The original text below is retained for historical comparison only; conflicting rules are superseded.
+
+---
+
 # metrics & Performance Evaluation System
 
 ## Purpose

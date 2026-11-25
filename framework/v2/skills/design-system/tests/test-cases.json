@@ -1,0 +1,17 @@
+[
+  {
+    "scenario": "generic centered hero",
+    "status": "not_run",
+    "expected": "Apply relevant SKILL.md rule; report evidence and blockers."
+  },
+  {
+    "scenario": "distinctive but inaccessible motion",
+    "status": "not_run",
+    "expected": "Apply relevant SKILL.md rule; report evidence and blockers."
+  },
+  {
+    "scenario": "existing brand redesign",
+    "status": "not_run",
+    "expected": "Apply relevant SKILL.md rule; report evidence and blockers."
+  }
+]

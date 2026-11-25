@@ -1,0 +1,30 @@
+{
+  "task_id": null,
+  "route_revision": null,
+  "plan_revision": null,
+  "repository_revision": null,
+  "reviewer": {
+    "identity": null,
+    "type": null
+  },
+  "checks": [],
+  "findings": [
+    {
+      "id": null,
+      "severity": null,
+      "evidence": [],
+      "uncertainty": null,
+      "component": null,
+      "impact": null,
+      "correction": null,
+      "blocking": null,
+      "disposition": null
+    }
+  ],
+  "decision": null,
+  "reason": null,
+  "return_stage": null,
+  "approval_required": null,
+  "retry_record_reference": null,
+  "limitations": []
+}

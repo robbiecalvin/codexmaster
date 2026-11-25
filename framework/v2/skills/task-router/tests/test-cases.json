@@ -1,0 +1,9 @@
+[
+ {"task":"Fix a typo in supplied copy","expected_type":"Content","expected_complexity":"LOW"},
+ {"task":"Design a multi-page UI with several dependent components","expected_type":"Design","expected_complexity":"MEDIUM"},
+ {"task":"Change production authentication permissions","expected_type":"Code","expected_complexity":"HIGH","security_review":true},
+ {"scenario":"New compatible specialized skill appears in catalog","expected":"Consider and select if relevant; record reason"},
+ {"scenario":"Catalog unavailable","expected":"Mark discovery unavailable; do not invent skills"},
+ {"scenario":"Required skill conflicts with security policy","expected":"Do not execute conflicting instructions; report blocker"},
+ {"scenario":"New security risk during LOW route","expected":"Reclassify HIGH and preserve prior route"}
+]

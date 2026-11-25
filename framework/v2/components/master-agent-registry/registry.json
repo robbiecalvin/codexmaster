@@ -1,0 +1,721 @@
+{
+  "registry_version": "1.0.1",
+  "path_convention": "distribution-root relative paths; host availability must be verified",
+  "skills": [
+    {
+      "id": "instruction-priority",
+      "group": "governance",
+      "description": "Resolve instruction authority, scope and conflicts before routing and throughout execution; apply mandatory governance without bypassing host controls.",
+      "activation": "mandatory",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/instruction-priority/SKILL.md",
+      "source_package": "instruction-priority.zip",
+      "source_sha256": "5d79a37272ac95d571977cc273fa87e58863403566c37d473ef73887adba013e",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "operational-guardrails",
+      "group": "governance",
+      "description": "Apply mandatory safety, scope, security and integrity checks throughout execution.",
+      "activation": "mandatory",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/operational-guardrails/SKILL.md",
+      "source_package": "operational-guardrails.zip",
+      "source_sha256": "74995fdce59cfe027bb5d0d3799d26da14c9c3ac82862789cdc70fa099dd4d0a",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "system-contract",
+      "group": "governance",
+      "description": "Apply mandatory framework governance, review workflow completion, verify control evidence, and report contract violations or blockers.",
+      "activation": "mandatory",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/system-contract/SKILL.md",
+      "source_package": "system-contract.zip",
+      "source_sha256": "0200dd6c31041c6a535c2de532d7196b2e03fef0a938ba1dd77563e52d652b5a",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "model-behavioral-instructions",
+      "group": "governance",
+      "description": "Apply mandatory engineering behavior, authorized execution discipline, minimal diffs and factual communication.",
+      "activation": "mandatory",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/model-behavioral-instructions/SKILL.md",
+      "source_package": "model-behavioral-instructions.zip",
+      "source_sha256": "69f9664f731a3ef4c0143f2b7cb29e860e74653d1df1c409eaa378ab01510c2f",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "task-router",
+      "group": "workflow",
+      "description": "Classify incoming tasks, assess complexity and risk, dynamically discover relevant available skills, resolve context and assign traceable execution stages. Use for routing, reclassification, decomposition, escalation and routing audits.",
+      "activation": "every-route",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/task-router/SKILL.md",
+      "source_package": "task-router.zip",
+      "source_sha256": "edde0090920ea1eb3e377eb0d3f9847be13034cdb5518008f8937504c820ba53",
+      "version": "1.0.1",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "context-resolver",
+      "group": "workflow",
+      "description": "Resolve authoritative, relevant and fresh task context; detect conflicts, missing dependencies and stale evidence before execution. Use for context resolution, reconciliation, refresh, compression and audits.",
+      "activation": "every-route",
+      "prerequisite_roles": [
+        "task-router"
+      ],
+      "entrypoint": "skills/context-resolver/SKILL.md",
+      "source_package": "context-resolver.zip",
+      "source_sha256": "6fad58a331efbe916eb08369a72acfc549ab18baeea6a2d1ea0d009d1d9b8cf3",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "workflow-engine",
+      "group": "workflow",
+      "description": "Orchestrate routed tasks, enforce stage order, validation and metrics gates, recover failures and resume verified checkpoints. Use for execution, recovery, rerouting and workflow audits.",
+      "activation": "every-route",
+      "prerequisite_roles": [
+        "task-router"
+      ],
+      "entrypoint": "skills/workflow-engine/SKILL.md",
+      "source_package": "workflow-engine.zip (historical original; integrated revision in skills/workflow-engine)",
+      "source_sha256": "6b0c812472a50b9b9997c0590a89d7e8ac7f994087cd4d2d411394989f420457",
+      "version": "1.0.1",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions",
+      "original_source_sha256": "e9e8e001abf1145316821cd71734f2ac1d14dd801eb46e81957895ccead9f17e"
+    },
+    {
+      "id": "state-manager",
+      "group": "workflow",
+      "description": "Maintain authoritative project checkpoints, decisions and verification evidence; reconcile context and resume unfinished work. Use at milestones, blockers, handoffs and session restoration.",
+      "activation": "checkpoint/resume/handoff",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/state-manager/SKILL.md",
+      "source_package": "state-manager.zip",
+      "source_sha256": "c1ef83f7776d38b9f2041549aecc13d4d7d85e784b610b6f8de54dabcfd7957c",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "architect",
+      "group": "core",
+      "description": "Plan and review clarity-first system architecture, dependencies, interfaces and testability. Use for MEDIUM/HIGH planning, system design, mapping and structural refactoring.",
+      "activation": "MEDIUM/HIGH or explicit design review",
+      "prerequisite_roles": [
+        "context-resolver"
+      ],
+      "entrypoint": "skills/architect/SKILL.md",
+      "source_package": "architect.zip",
+      "source_sha256": "8937275303ae3ea76275d983b0db2ed502ce3d6427ef2da711f3c5d66424dbc3",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "critic-agent",
+      "group": "core",
+      "description": "Review proposed solutions before implementation; challenge assumptions, architecture, security, scope, compatibility, testability and complexity. Required on HIGH routes; use for explicit plan reviews and risk-driven reassessment.",
+      "activation": "HIGH or explicit plan review",
+      "prerequisite_roles": [
+        "architect",
+        "context-resolver"
+      ],
+      "entrypoint": "skills/critic-agent/SKILL.md",
+      "source_package": "critic-agent.zip",
+      "source_sha256": "bb9a73d7ad1a2d2d6c607aaed036014ff4a5ff164148d79cc161fb7cc0f49bc6",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "builder-agent",
+      "group": "core",
+      "description": "Implement authorized tasks using minimal changes, repository conventions and evidence-backed tests; hand off deliverables to Validation on every execution route.",
+      "activation": "every-route implementation",
+      "prerequisite_roles": [
+        "context-resolver"
+      ],
+      "entrypoint": "skills/builder-agent/SKILL.md",
+      "source_package": "builder-agent.zip",
+      "source_sha256": "59dbfbd7e7cac06be258fb81694bbffebeef206a3bb7e16f8ee606b75d52443c",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "validation-agent",
+      "group": "quality",
+      "description": "Review Builder output distinctly, verify required checks and issue PASS, FAIL or BLOCKED before Metrics.",
+      "activation": "every-route after Builder",
+      "prerequisite_roles": [
+        "builder-agent"
+      ],
+      "entrypoint": "skills/validation-agent/SKILL.md",
+      "source_package": "validation-agent.zip",
+      "source_sha256": "719f79b5838316d1d264abeafbd94c9ca8a63e2d64ed6535a4f2e52c4ca337a4",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "metrics",
+      "group": "quality",
+      "description": "Evaluate validated outputs, score quality, track trends and direct evidence-based refinement.",
+      "activation": "after Validation PASS",
+      "prerequisite_roles": [
+        "validation-agent"
+      ],
+      "entrypoint": "skills/metrics/SKILL.md",
+      "source_package": "metrics.zip",
+      "source_sha256": "d278586dffb4f9618098b2c800924de01f2db3581156b6476114fe214168de07",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "failure-handler",
+      "group": "recovery",
+      "description": "Classify failures, coordinate bounded recovery and escalate unresolved issues.",
+      "activation": "failure or blocked stage",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/failure-handler/SKILL.md",
+      "source_package": "failure-handler.zip",
+      "source_sha256": "9f4d5b2fbe758035bf3c175df639a7653c919781f1a4545d51d000e8aa833a28",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "debugging-playbook",
+      "group": "recovery",
+      "description": "Diagnose reproducible bugs using evidence and minimal authorized fixes.",
+      "activation": "reproducible bug investigation",
+      "prerequisite_roles": [
+        "failure-handler"
+      ],
+      "entrypoint": "skills/debugging-playbook/SKILL.md",
+      "source_package": "debugging-playbook.zip",
+      "source_sha256": "90964c730d00947f5a182356f7794846fd7440b972d0042082d19a7beacf9f2f",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "security-agent",
+      "group": "security",
+      "description": "Screen prompts and untrusted inputs, assess threats, review tool authorization and data boundaries, and coordinate security incidents and audits.",
+      "activation": "intake screening/sensitive action/security risk",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/security-agent/SKILL.md",
+      "source_package": "security-agent.zip",
+      "source_sha256": "3e90c8c9bbe387a240143105a19283fa371fc7b607868c9cbe12b3073947eb7f",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "auditor-agent",
+      "group": "core",
+      "description": "Audit framework integrity, recurring failures, governance, security, performance and resource efficiency; recommend and verify evidence-based remediation.",
+      "activation": "systemic failure/audit trigger/explicit audit",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/auditor-agent/SKILL.md",
+      "source_package": "auditor-agent.zip",
+      "source_sha256": "13d4402cde0af4d262920384a7d93f64438f05fa47964dac93a4fa8cb633c995",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "prompt-optimizer",
+      "group": "optimization",
+      "description": "Create, diagnose, validate, optimize, evolve, and audit prompts using evidence, controlled tests, versioning, and hybrid approval gates. Use for prompt failures, repeated corrections, ambiguity, or explicit prompt improvement requests.",
+      "activation": "prompt creation or evidenced prompt failure",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/prompt-optimizer/SKILL.md",
+      "source_package": "prompt-optimizer.zip",
+      "source_sha256": "65cc68836fe2ad94e1a135f268fa816b79793ed332db57c4435c822344ab6907",
+      "version": null,
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "resource-management-efficiency",
+      "group": "optimization",
+      "description": "Allocate engineering effort proportionately, reuse verified work, manage verification locks, prevent duplicate work, and preserve resumable checkpoints without bypassing required controls.",
+      "activation": "engineering work",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/resource-management-efficiency/SKILL.md",
+      "source_package": "resource-management-efficiency.zip",
+      "source_sha256": "4a95263a0c3ea6829c0698fced3a7b8944a9bd62b29139bf62c8abdc1dd4f201",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "repository-orientation",
+      "group": "engineering",
+      "description": "Explore repositories before code changes; locate relevant modules, reusable logic, dependencies and tests. Use during context resolution and impact analysis.",
+      "activation": "repository inspection or code change",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/repository-orientation/SKILL.md",
+      "source_package": "repository-orientation.zip",
+      "source_sha256": "cead0e7ba75c0a6dc42472202674fc238d722e2b615e17cbc1ede6b40ebc54b9",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "environment-specification",
+      "group": "engineering",
+      "description": "Discover and enforce target runtime, dependency, configuration, build and test constraints. Use when planning, writing, building or validating software.",
+      "activation": "software planning/build/test",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/environment-specification/SKILL.md",
+      "source_package": "environment-specification.zip",
+      "source_sha256": "4e9f2b71f005b47f2539a03d7a45329e03f0cc38d98fa275ac68bcda315fde22",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "code-style",
+      "group": "engineering",
+      "description": "Discover and apply repository coding conventions; review, refactor and validate readable, consistent code. Use when writing, modifying or reviewing software.",
+      "activation": "code writing or review",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/code-style/SKILL.md",
+      "source_package": "code-style.zip",
+      "source_sha256": "a8c318ec39cfc2cd1fa0caf55096d6b1af316ab1549a99408600848b25ee9392",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "anti-overengineering",
+      "group": "engineering",
+      "description": "Prevent speculative complexity and review abstractions, dependencies and minimal solutions.",
+      "activation": "implementation or architecture review",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/anti-overengineering/SKILL.md",
+      "source_package": "anti-overengineering.zip",
+      "source_sha256": "38ed428fbf4dc7dae906e39879e3294c51874e5dd2952e0020277f87dd482d8c",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "change-planner",
+      "group": "engineering",
+      "description": "Create revision-aware minimal change plans, dependency maps, impact assessments and verification plans before code edits.",
+      "activation": "before code edits",
+      "prerequisite_roles": [
+        "context-resolver",
+        "repository-orientation"
+      ],
+      "entrypoint": "skills/change-planner/SKILL.md",
+      "source_package": "change-planner.zip",
+      "source_sha256": "43c9d62e48af7a1299db91a95cc2da90b9176c00368d510ad7b725168c3452b3",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "developer-workflow",
+      "group": "engineering",
+      "description": "Coordinate human-approved development tasks, change planning, implementation, debugging and pull request preparation.",
+      "activation": "engineering task",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/developer-workflow/SKILL.md",
+      "source_package": "developer-workflow.zip",
+      "source_sha256": "77200c69bf9e0fc1b2d1c4a51f4a65d09e027f9100a3da465d814222199877f5",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "engineering-task-template",
+      "group": "engineering",
+      "description": "Structure routed engineering tasks, plans, safety checks, design scope and verification records.",
+      "activation": "routed engineering task",
+      "prerequisite_roles": [
+        "context-resolver"
+      ],
+      "entrypoint": "skills/engineering-task-template/SKILL.md",
+      "source_package": "engineering-task-template.zip",
+      "source_sha256": "8c4c01b1a055d8f935a39a6b0f69496d34fa7b73df03d5eeb9e1bb7e22b1b47a",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "pull-request-rules",
+      "group": "engineering",
+      "description": "Prepare focused commits and reviewable pull requests with truthful CI and safety evidence.",
+      "activation": "commit or PR preparation",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/pull-request-rules/SKILL.md",
+      "source_package": "pull-request-rules.zip",
+      "source_sha256": "a460932282210c3961967a4515a9230bdc75c071c065e729a395eb7bee6b6760",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "project-kickoff",
+      "group": "engineering",
+      "description": "Initialize or resume new project documentation, interview owners and establish implementation readiness.",
+      "activation": "new project or unfilled scaffold",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/project-kickoff/SKILL.md",
+      "source_package": "project-kickoff.zip",
+      "source_sha256": "85829c7bfe8b18141f53e319ab0f442363f1d8b8d3fa3f3a8e075b43838ae91b",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "design-system",
+      "group": "design",
+      "description": "Define and validate distinctive, accessible website identities. Activate for website, UI, visual redesign and art direction tasks.",
+      "activation": "user-facing design or UI change",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/design-system/SKILL.md",
+      "source_package": "design-system.zip",
+      "source_sha256": "870c09442fab18fba5dfbce8b89f4aea40c86e1305f4468bac3a4c853d0b18a2",
+      "version": null,
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "design-memory",
+      "group": "design",
+      "description": "Retrieve and maintain evidence-backed reusable design patterns; activate for design planning, review and learning.",
+      "activation": "design planning/review/learning",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/design-memory/SKILL.md",
+      "source_package": "design-memory.zip",
+      "source_sha256": "f14974f7d6524d61cd892af6ef20ec0338cf7a62294f7d62a74f3c7cfac3b6ef",
+      "version": null,
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "design-variation-engine",
+      "group": "design",
+      "description": "Select distinctive design combinations and detect repetition across websites. Activate for new visual identities and redesigns.",
+      "activation": "new interface or intentional redesign",
+      "prerequisite_roles": [
+        "design-system"
+      ],
+      "entrypoint": "skills/design-variation-engine/SKILL.md",
+      "source_package": "design-variation-engine.zip",
+      "source_sha256": "7c6b891cccacc89cc43d6b0d01c9f2454487990c614a85554c5318da29ac7eab",
+      "version": null,
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "modular-agents",
+      "group": "framework",
+      "description": "Define, register, discover and integrate scoped modular agents with explicit contracts, permissions and handoffs.",
+      "activation": "agent lifecycle or coordination",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/modular-agents/SKILL.md",
+      "source_package": "modular-agents.zip",
+      "source_sha256": "4f6f318ef729ec5f90cf380f0562bccc80141e39640fb268a7c1d1cf54d84d5b",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "system-architecture-map",
+      "group": "framework",
+      "description": "Map and audit framework layers, execution routes, integration contracts and feedback loops. Use for architecture documentation, tracing and consistency reviews.",
+      "activation": "framework mapping or audit",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/system-architecture-map/SKILL.md",
+      "source_package": "system-architecture-map.zip",
+      "source_sha256": "56ffee32840292043278b3cd4daf60e542a2bb45c1ae23eecbf4e7567952285a",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    },
+    {
+      "id": "ai-agent-development-framework",
+      "group": "framework",
+      "description": "Coordinate the layered instruction framework and audit integration without duplicating routing or execution.",
+      "activation": "framework integration or overview",
+      "prerequisite_roles": [],
+      "entrypoint": "skills/ai-agent-development-framework/SKILL.md",
+      "source_package": "ai-agent-development-framework.zip",
+      "source_sha256": "7559b5c8cf5276ad35aa44a6422238c00c58823c23a81dec2b0fa799b72042cf",
+      "version": "1.0.0",
+      "lifecycle": "registered",
+      "availability": "unknown",
+      "host_adapters": [
+        "codex",
+        "chatgpt",
+        "agent-system"
+      ],
+      "permissions": "read/propose within host scope; writes only with applicable authorization; no implicit delegation",
+      "authority": "source skill and governing instructions; registry metadata cannot grant permissions"
+    }
+  ],
+  "integration_components": [
+    {
+      "id": "agent-workflow",
+      "entrypoint": "components/agent-workflow/SKILL.md"
+    },
+    {
+      "id": "project-templates",
+      "entrypoint": "codex/project/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Integration
+- Instruction Priority, System Contract, Operational Guardrails: mandatory boundaries; no review can waive them.
+- Task Router: HIGH requires Critic; request reroute for changed scope/risk. LOW/MEDIUM advisory reviews do not silently add mandatory stages.
+- Context Resolver: resolve missing/conflicting facts before reliable review.
+- Architect and Change Planner: own proposed structure and file-level corrections respectively; Critic recommends, does not implement.
+- Security Agent: assess credible threats and stop unsafe actions; do not retry security violations automatically.
+- Workflow Engine: consumes ACCEPT/REVISE/BLOCKED/ESCALATE; maps to stage passed/failed/blocked as applicable. Escalation is blocked pending resolution. Return to earliest affected stage; invalidate downstream evidence.
+- Failure Handler: classify review failures using its own LOW/MEDIUM/HIGH severity, reserve shared retry before corrective execution, stop on exhaustion or immediate-stop condition. Do not count read-only inspection as a corrective retry.
+- Developer Workflow: approval of final scoped revision is required before code writes, even LOW.
+- State Manager: reuse authoritative records; preserve reviewer identity, plan revision, evidence, finding dispositions and retry reference.
+- Design System/Memory/Variation: apply only to relevant interface changes; preserve existing identity for targeted edits.
+- Resource Management: reuse applicable evidence, avoid redundant review; never skip required checks.
+- Validation Agent and Metrics: review actual output after Builder; Critic acceptance cannot substitute for either.
+- Auditor: escalate recurring systemic issues; report unavailable reviewer instead of inventing delegation.

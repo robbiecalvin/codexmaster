@@ -1,0 +1,3 @@
+# Integration
+Discover through Task Router metadata. Consume resolved context and task ID/route revision from Workflow Engine. Return the structured report with evidence and blockers. Architect is a route responsibility; environment-specification is cross-cutting, not an extra stage. Use State Manager for authorized checkpoints. Governance (System Contract, Guardrails, instruction_priority) applies throughout. Metrics and Validation own acceptance; neither skill may declare final acceptance. Missing required checks block successful completion. Use existing project equivalents for framework references; do not invent missing contracts.
+

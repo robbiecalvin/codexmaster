@@ -1,0 +1,24 @@
+{
+  "task_id": null,
+  "revision": null,
+  "evidence": [],
+  "blockers": [],
+  "next_action": null,
+  "status": null,
+  "reviewer": null,
+  "checks": [
+    {
+      "check": null,
+      "command_or_tool": null,
+      "scope": null,
+      "observed_result": null,
+      "required": null,
+      "skip_reason": null
+    }
+  ],
+  "issues": [],
+  "missing": [],
+  "risks": [],
+  "recommendations": [],
+  "final_decision": null
+}

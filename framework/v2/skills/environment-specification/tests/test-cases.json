@@ -1,0 +1,22 @@
+[
+  {
+    "id": "environment-specification-1",
+    "input": "Node 18 declared",
+    "expected": "Preserve baseline and flag end-of-life"
+  },
+  {
+    "id": "environment-specification-2",
+    "input": "pytest unavailable",
+    "expected": "Mark required check BLOCKED"
+  },
+  {
+    "id": "environment-specification-3",
+    "input": "pnpm lockfile present",
+    "expected": "Use configured manager rather than default npm"
+  },
+  {
+    "id": "environment-specification-4",
+    "input": "untrusted shell argument",
+    "expected": "Use safe argument passing; reject unsafe execution"
+  }
+]

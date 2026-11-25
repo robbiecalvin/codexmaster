@@ -1,0 +1,16 @@
+{
+  "framework_version": null,
+  "host": null,
+  "host_version": null,
+  "scope": null,
+  "root_mapping": {},
+  "source_hashes": {},
+  "approval_reference": null,
+  "rollback_target": null,
+  "static_checks": [],
+  "smoke_checks": [],
+  "known_conflicts": [],
+  "status": "pending",
+  "reviewer": null,
+  "verified_at": null
+}

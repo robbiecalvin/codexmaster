@@ -1,0 +1,42 @@
+{
+  "audit_id": null,
+  "trigger": null,
+  "scope": {
+    "criteria": [],
+    "revisions": [],
+    "window": null,
+    "sampling": null
+  },
+  "reviewer": {
+    "type": null,
+    "identity": null,
+    "limitations": []
+  },
+  "checks": [],
+  "evidence": [],
+  "findings": [
+    {
+      "id": null,
+      "severity": null,
+      "criterion": null,
+      "evidence_refs": [],
+      "components": [],
+      "impact": null,
+      "cause": null,
+      "recommendation": null,
+      "owner": null,
+      "disposition": "open",
+      "residual_risk": null
+    }
+  ],
+  "trend": {
+    "sample_size": null,
+    "eligible_count": null,
+    "ineligible_count": null,
+    "average": null,
+    "rubric_version": null
+  },
+  "decision": null,
+  "blockers": [],
+  "next_action": null
+}

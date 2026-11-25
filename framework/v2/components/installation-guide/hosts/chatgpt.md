@@ -1,0 +1,9 @@
+# ChatGPT setup
+Use a dedicated Project for each application. Keep the reference framework version pinned; avoid mixing versions across chats.
+1. Create a Project and open Project settings. Add the governing bootstrap instructions from templates/chatgpt-bootstrap.md, adapting the source mapping. These instructions do not replace platform policies.
+2. Add AGENTS.md, the four mandatory governance files, registry.json, Agent Workflow and the required route instructions as accessible project sources. Use unique filenames or a labeled Markdown bundle to avoid identical SKILL.md names. If upload limits prevent all files being present, supply relevant specialized files on demand or use an authorized connected source with accessible files. Do not assume ZIP extraction or local paths work in ordinary chat.
+3. Keep project working documents separate from examples; supply current decisions and checkpoints. Verify actual retrieval of each mandatory source before routing; if not accessible, stop framework-compliant execution. Do not claim native skills installed simply because documents are attached.
+4. Start a fresh project chat, run the bootstrap smoke prompt, then a read-only task. Check that required sources and route are reported. For code work, supply files or use an authorized host capable of editing them; otherwise return a proposal or artifact, not a claim of repository edits.
+5. Save approved decisions and checkpoints to the authoritative project records. If persistence is unavailable, return a portable checkpoint for manual saving.
+
+Project instructions and sources are supported; file limits vary. See https://help.openai.com/en/articles/10169521-projects-in-chatgpt and https://help.openai.com/en/articles/8555545-uploading-files-to-chatgpt (consult current documentation; the latter article may redirect).

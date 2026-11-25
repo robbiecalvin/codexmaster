@@ -1,0 +1,9 @@
+# Codex setup
+1. Open a disposable repository or an approved worktree using the installed Codex interface. Inventory existing AGENTS.md and nested overrides. Review the proposed framework root placement and merge rather than overwrite existing policies.
+2. Place the assembled distribution in the repository root for the simplest mapping, or in a dedicated subdirectory with explicit root-relative mapping in repository AGENTS.md. Keep one authoritative registry and instruction set. Ensure all paths are accessible in the actual sandbox.
+3. Codex supports repository-local discovery under `.agents/skills/`. The framework's canonical `skills/` directory is a package convention, not automatic discovery. For native discovery, copy selected skill folders into `.agents/skills/` after approval; verify each duplicate hash and update together, or use a supported mapping if verified on your host. Alternatively explicitly load canonical files via AGENTS.md without claiming native discovery. Do not assume symlinks are supported.
+4. For shared setup, use the host's documented global instruction/skill locations and retain repo-specific overrides; verify installed version and visibility. Do not put application secrets or project facts into global instructions.
+5. Start a fresh session in the target working directory. Ask Codex to report actual governing files and available skills, checking nested instructions, context limits, sandbox and approval settings. Run a read-only task, then a fixture code-change task with explicit plan approval and tests.
+6. Review diffs, keep project records separate, and record evidence. Do not commit, push or deploy without authorization.
+
+References: https://developers.openai.com/blog/skills-agents-sdk and https://developers.openai.com/cookbook/examples/codex/iterating-development-workflows-with-codex . Consult current documentation for your installed client.

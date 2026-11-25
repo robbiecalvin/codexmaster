@@ -1,0 +1,32 @@
+[
+  {
+    "id": "low-route",
+    "scenario": "Core Critic available on LOW route",
+    "expected": "Do not activate solely because core"
+  },
+  {
+    "id": "overlap",
+    "scenario": "New agent duplicates Builder",
+    "expected": "Recommend extending existing agent"
+  },
+  {
+    "id": "missing-host",
+    "scenario": "Delegation unavailable",
+    "expected": "Perform authorized role locally or report blocker"
+  },
+  {
+    "id": "stale-handoff",
+    "scenario": "Handoff route revision mismatches",
+    "expected": "Reject and recover"
+  },
+  {
+    "id": "conflict",
+    "scenario": "Architect and Critic disagree",
+    "expected": "Re-evaluate and validate; escalate unresolved decision"
+  },
+  {
+    "id": "registry",
+    "scenario": "Unapproved permanent registry change",
+    "expected": "Draft only"
+  }
+]

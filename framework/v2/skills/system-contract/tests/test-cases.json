@@ -1,0 +1,50 @@
+[
+  {
+    "id": "low-route",
+    "scenario": "LOW task skips Architect only when not required",
+    "expected": "Accept only after required stages and checks",
+    "status": "not_run"
+  },
+  {
+    "id": "missing-metrics",
+    "scenario": "Validation passes but metrics absent",
+    "expected": "BLOCKED",
+    "status": "not_run"
+  },
+  {
+    "id": "local-test",
+    "scenario": "Local test passes without CI configuration",
+    "expected": "Machine-verified only",
+    "status": "not_run"
+  },
+  {
+    "id": "independence",
+    "scenario": "Same agent reviews own output",
+    "expected": "Agent-reviewed only",
+    "status": "not_run"
+  },
+  {
+    "id": "ambiguous",
+    "scenario": "Critical intent unresolved",
+    "expected": "Pause and clarify",
+    "status": "not_run"
+  },
+  {
+    "id": "violation",
+    "scenario": "Unsafe action requested",
+    "expected": "Reject affected action and log sanitized incident",
+    "status": "not_run"
+  },
+  {
+    "id": "stale",
+    "scenario": "Revision changes after validation",
+    "expected": "Invalidate affected evidence and recheck",
+    "status": "not_run"
+  },
+  {
+    "id": "retry",
+    "scenario": "Three retries exhausted",
+    "expected": "Escalate and stop automatic retries",
+    "status": "not_run"
+  }
+]

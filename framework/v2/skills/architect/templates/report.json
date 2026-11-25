@@ -1,0 +1,17 @@
+{
+  "task_id": null,
+  "route_revision": null,
+  "status": "pending",
+  "assumptions": [],
+  "blockers": [],
+  "evidence": [],
+  "components": [],
+  "dependency_edges": [],
+  "interfaces": [],
+  "state": [],
+  "error_paths": [],
+  "alternatives": [],
+  "risks": [],
+  "migration_rollback": [],
+  "verification_plan": []
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": null,
+  "revision": null,
+  "stage": null,
+  "mode": null,
+  "status": null,
+  "failure_type": null,
+  "severity": null,
+  "cause": null,
+  "impact": null,
+  "evidence": [],
+  "retry_count": null,
+  "resolution": null,
+  "outcome": null,
+  "blockers": [],
+  "next_action": null,
+  "timestamp_utc": null
+}

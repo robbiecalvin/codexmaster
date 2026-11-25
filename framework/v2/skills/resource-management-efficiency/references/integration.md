@@ -1,0 +1,11 @@
+# Integration
+- Task Router owns complexity and required stages; this policy allocates effort within them.
+- Developer Workflow and Change Planner require a clear approved plan even for LOW code edits; trivial non-code tasks may proceed directly when authorized.
+- State Manager owns existing status, decisions, checkpoints and verification records; create a lightweight ledger only if no equivalent exists and authorized.
+- Context Resolver selects relevant current context; do not discard mandatory instructions.
+- Validation Agent checks evidence applicability; Metrics uses authoritative rubric, never invented savings or scores.
+- Failure Handler owns shared three-retry budget; diagnose before retrying.
+- Security Agent, Guardrails and System Contract override resource savings. Required checks cannot be waived by locks.
+- Modular Agents governs authorized delegation; Anti-Overengineering governs simplicity.
+- Instruction Priority is referenced by source but not packaged here; use actual host hierarchy and report missing required guidance.
+- No executable lock, quota monitor, scheduler or independent validation is installed by this package.

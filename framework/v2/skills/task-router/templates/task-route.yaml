@@ -1,0 +1,26 @@
+task_route:
+  task_id: null
+  revision: 1
+  primary_type: null
+  secondary_types: []
+  complexity: null
+  intent: null
+  risk_level: null
+  routing_confidence: null # qualitative, with rationale
+  context:
+    status: unresolved
+    missing_information: []
+    dependencies: []
+  discovery:
+    status: unavailable
+    selected_skills: [] # name, reason, dependencies
+    unavailable_skills: []
+  execution:
+    required_roles: []
+    workflow: []
+    approval_required: []
+    ready: false
+  routing:
+    rationale: null
+    escalation_conditions: []
+    notes: []
