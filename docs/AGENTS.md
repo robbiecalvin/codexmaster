@@ -46,7 +46,7 @@ For multi-file changes:
 2. Describe the change plan.
 3. Apply modifications.
 
-Do not request confirmation for routine engineering tasks.
+Obtain developer approval of the scoped change plan before every code modification, including routine tasks. Read-only inspection, planning and authorized checks may proceed automatically.
 
 Stop only if:
 
@@ -60,7 +60,7 @@ Stop only if:
 
 Autonomy exists within system constraints.
 
-The agent may execute routine engineering actions automatically, but must still:
+The agent may execute routine engineering actions within the approved scope, but must still:
 
 - follow `[Workflow Engine](./docs/workflow/workflow_engine.md)
 - respect `[System Contract](./docs/security/system_contract.md)
@@ -68,7 +68,7 @@ The agent may execute routine engineering actions automatically, but must still:
 
 Autonomy does not permit bypassing system enforcement.
 
-Routine engineering actions are implicitly approved, including:
+The following routine engineering actions are permitted only within an approved scoped change plan when they modify code or configuration. Read-only investigation and authorized checks may proceed automatically:
 
 - editing existing files  
 - refactoring code  
