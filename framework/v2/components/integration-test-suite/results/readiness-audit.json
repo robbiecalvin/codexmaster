@@ -2,8 +2,8 @@
   "status": "PENDING_VERIFICATION",
   "live_tests": "NOT_RUN",
   "findings": {
-    "A01": "MACHINE_SNAPSHOT_CHECK_PENDING_CI",
-    "A02": "FIXTURE_TESTS_PASS_SUBSTANTIVE_REVIEW_PENDING",
+    "A01": "OFFLINE_REVIEWED",
+    "A02": "FINAL_FIXTURE_CORRECTIONS_PENDING_CI",
     "A03": "OFFLINE_REVIEWED",
     "A04": "OFFLINE_REVIEWED",
     "A05": "OFFLINE_REVIEWED",
@@ -17,5 +17,5 @@
     "A13": "OFFLINE_REVIEWED",
     "A14": "OFFLINE_REVIEWED"
   },
-  "notes": "CI passed at ee419e8. Snapshot comparison checks declared hash maps, not authenticity or completeness of capture. Live testing deferred."
+  "notes": "CI passed at 1bbcfba; exact approved 30-path scope and unchanged main verified. Snapshot comparisons verify declared maps only. Live discovery and model testing deferred. Beta readiness pending final CI and approval."
 }

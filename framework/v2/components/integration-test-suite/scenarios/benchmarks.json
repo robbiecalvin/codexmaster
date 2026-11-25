@@ -127,7 +127,7 @@
   {
     "id": "P06",
     "category": "Targeted UI modification",
-    "prompt": "Change one button label in a supplied HTML fixture.",
+    "prompt": "Change the Continue button label to Save changes in the supplied HTML fixture.",
     "acceptance": "Label changes only; existing styling and accessibility preserved.",
     "status": "NOT_RUN",
     "family": "design",

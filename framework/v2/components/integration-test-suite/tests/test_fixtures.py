@@ -43,4 +43,10 @@ class Fixtures(unittest.TestCase):
         from fixtures import material
         item=next(r for r in catalog() if r["id"]=="P01")
         self.assertNotIn(item["acceptance"],material(item)[1]["prompt"])
+    def test_final_benchmark_inputs(self):
+        from fixtures import material
+        items={r["id"]:r for r in catalog()}
+        self.assertIn("sample.csv",material(items["P03"])[0])
+        self.assertIn("dates.py",material(items["P05"])[0])
+        self.assertIn("Save changes",material(items["P06"])[1]["prompt"])
 if __name__=="__main__": unittest.main()

@@ -28,6 +28,10 @@ def material(item):
         files["project.md"]="# Offline calculator\nNo marketplace or network features.\n"
     if scenario=="B27":
         files["host-requirements.json"]=json.dumps({"delegation":False,"requires_actual_host_verification":True})+"\n"
+    if scenario=="P03":
+        files["sample.csv"]="id,name\n1,Alpha\n2,Beta\n2,Duplicate\n,Missing ID\n"
+    if scenario=="P05":
+        files["dates.py"]="def format_date(value):\n    return value.strftime('%Y-%m-%d')\n"
     files["scenario.json"]=json.dumps({"id":scenario,"setup":item.get("setup",item.get("prompt"))},sort_keys=True)+"\n"
     hashes={name:hashlib.sha256(content.encode("utf-8")).hexdigest() for name,content in sorted(files.items())}
     prompt=item["prompt"]+"\nFixture setup: "+item.get("setup",item["prompt"])+"\nInspect supplied fixture files. Follow actual host permissions."

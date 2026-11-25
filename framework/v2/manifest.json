@@ -40,7 +40,7 @@
     "components/installation-guide/tests/SMOKE-TESTS.md": "1f737109c0025a00a3cc86b643ec84a0a4b61d70781bb649cd513786e3c299f8",
     "components/installation-guide/tests/check_installation.py": "f6e92a2dbe6896b7902623495ec4f6ef6a9369812370647465863bca8cbda9df",
     "components/installation-guide/tests/static-results.md": "a2438cd1613d276debad79f6622b08df90f476964feaa8a444ffe17e2614d85c",
-    "components/integration-test-suite/CHANGELOG.md": "854152c20fb35a9544ceacc5312add7b02cc9b5a26ae208b8b291d52d37f2e12",
+    "components/integration-test-suite/CHANGELOG.md": "79c272581c86a0801e8919b8f48ad6a6fb87af63f8261f37d80099b6e87c61e7",
     "components/integration-test-suite/README.md": "47b9f1401dab9cc681233daa68bcc693d4dbf183eca309025bfab70fcc8b31d8",
     "components/integration-test-suite/compatibility.md": "200ef1f8dc33c04a02e257ac62aefcd3e84615a0a0bad8e59b4ee2eb7866f89a",
     "components/integration-test-suite/fixtures/baseline.json": "b0aa2b6f3ac4d58bb576de4772967e8cda6d54b9e9f0fd667a3ec5ac49c830a5",
@@ -363,7 +363,7 @@
     "MIGRATION.md": "f3ef68f7fb1f6b998d6a8ed3a34a0d232225e5ed045d5b2866a5cd9c1e9020c3",
     "ACTIVATION.md": "379334f8b14b3024f42ba07e0b4242ad1b292b100481fe86cf8f27d04e1d7c82",
     "components/integration-test-suite/scenarios/behavioral-fixtures.json": "265590739dff200be482beec7976b767927dec5621efa00dd79675dc1ae2c2d1",
-    "components/integration-test-suite/scenarios/benchmarks.json": "d75ab7b36c5324c7f1ecb2a189c30eaef74195da51648a3a61c7635977ac664a",
+    "components/integration-test-suite/scenarios/benchmarks.json": "66732df31ba2bfddae39d48452c121ca65c63c1836abeaa7994fbd484489898f",
     "components/integration-test-suite/evaluation/evidence.py": "3630e9ee20ced2ce7ba7ef1b7077b0080b42f30bb7ad0cdd832631d2ad2afdb1",
     "components/integration-test-suite/evaluation/metrics.py": "34ae63fcd24e8666572287e4e3122ff6fffd52c0168d6948ab457395b87bf1b6",
     "components/integration-test-suite/evaluation/report.py": "1af53a3b65e0550bf81185dcb7f1e6eb3d3c1f36b50e704c8d75d06bb05b7e30",
@@ -376,9 +376,9 @@
     "components/integration-test-suite/templates/evaluation-config.json": "2b34a77ff69a01d24cc0c5cfdcd9577abfc101fb4ee4da8c69c14b42a9856323",
     "components/integration-test-suite/tests/test_benchmarks.py": "d7a0e61d9daf1c87eb80cc0cc46f63b4ad0604d72648edc1cee44a25b0bc46ef",
     "components/integration-test-suite/fixtures/library.json": "06e829e9473d73c939b2fc00ec14aef1465c47ac02fca570e3ed987c57a4f6b9",
-    "components/integration-test-suite/evaluation/fixtures.py": "ebb4087e8e3756d97d7d3ec6dbf29b904c98a4faa36696bcb1c0d4a5a412c049",
-    "components/integration-test-suite/tests/test_fixtures.py": "3baa71151e9de324d7f43938705a45df722e96b325e9c98258710fd614198238",
+    "components/integration-test-suite/evaluation/fixtures.py": "fd2fd6bc7bcb2645ed8f4ce068fc4482c353fabc67c234b1f4f6c6f5b692d3fe",
+    "components/integration-test-suite/tests/test_fixtures.py": "bf39363897ff4e00026f495e5f3be207d9fe8a8d0770311d3ee8e01e5154c158",
     "components/integration-test-suite/tests/test_evidence.py": "0426258c05ed7572abc1622b4ff22ff1bc851561190150dc83304d16ea067b5a",
-    "components/integration-test-suite/results/readiness-audit.json": "c061114fce60a01585c137f974dfcfeca9403ac1423a59231ded1eb087702686"
+    "components/integration-test-suite/results/readiness-audit.json": "e00d77c8d5ead9b43e877a39badffa60c7064e33cfa93052f5cf1ae6f58c4a10"
   }
 }
