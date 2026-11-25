@@ -1,0 +1,16 @@
+{
+  "task_id": null,
+  "route_revision": null,
+  "status": "pending",
+  "assumptions": [],
+  "blockers": [],
+  "evidence": [],
+  "declared_runtime": {},
+  "observed_runtime": {},
+  "package_managers": {},
+  "dependencies": [],
+  "configuration": [],
+  "build_checks": [],
+  "test_checks": [],
+  "deviations": []
+}

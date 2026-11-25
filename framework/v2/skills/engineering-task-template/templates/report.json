@@ -1,0 +1,23 @@
+{
+  "task_id": null,
+  "revision": null,
+  "evidence": [],
+  "blockers": [],
+  "next_action": null,
+  "route": null,
+  "objective": null,
+  "acceptance_criteria": [],
+  "constraints": [],
+  "affected_files": [],
+  "current_behavior": null,
+  "root_cause": null,
+  "plan": [],
+  "safety_checks": [],
+  "approval": null,
+  "design_impact": null,
+  "implementation": [],
+  "tests": [],
+  "validation": null,
+  "metrics": null,
+  "change_summary": null
+}

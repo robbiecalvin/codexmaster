@@ -1,0 +1,125 @@
+{
+  "task_id": null,
+  "revision": null,
+  "evidence": [],
+  "blockers": [],
+  "next_action": null,
+  "status": "in progress",
+  "documents": [
+    {
+      "template": "project_context.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "product_spec.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "access_matrix.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "page_inventory.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "pricing_and_payments.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "booking_lifecycle.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "application_architecture.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "data_model.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "application_diagram.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "application_security.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "deployment.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "launch_acceptance.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "decisions.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    },
+    {
+      "template": "next_steps.md",
+      "working_path": null,
+      "status": "pending",
+      "decision_or_evidence": null,
+      "owner": null,
+      "impact": null
+    }
+  ],
+  "first_release_scope": null,
+  "acceptance_criteria": [],
+  "first_task": null
+}

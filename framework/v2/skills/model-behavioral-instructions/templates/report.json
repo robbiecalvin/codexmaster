@@ -1,0 +1,11 @@
+{
+  "task_id": null,
+  "revision": null,
+  "mode": null,
+  "objective": null,
+  "evidence": [],
+  "findings": [],
+  "status": "pending",
+  "blockers": [],
+  "next_action": null
+}

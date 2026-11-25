@@ -1,0 +1,17 @@
+[
+  {
+    "scenario": "unsupported success claim",
+    "status": "not_run",
+    "expected": "Apply relevant SKILL.md rule; report evidence and blockers."
+  },
+  {
+    "scenario": "superseded pattern",
+    "status": "not_run",
+    "expected": "Apply relevant SKILL.md rule; report evidence and blockers."
+  },
+  {
+    "scenario": "same-brand reuse",
+    "status": "not_run",
+    "expected": "Apply relevant SKILL.md rule; report evidence and blockers."
+  }
+]

@@ -1,0 +1,2 @@
+Referenced assembly paths exist
+Static bootstrap checks passed; behavioral tests not run

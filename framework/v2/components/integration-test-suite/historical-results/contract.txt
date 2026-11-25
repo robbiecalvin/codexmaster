@@ -1,0 +1,13 @@
+test_approval (__main__.Contract.test_approval) ... ok
+test_delivery (__main__.Contract.test_delivery) ... ok
+test_handoff (__main__.Contract.test_handoff) ... ok
+test_ineligible (__main__.Contract.test_ineligible) ... ok
+test_metrics_boundaries (__main__.Contract.test_metrics_boundaries) ... ok
+test_retry (__main__.Contract.test_retry) ... ok
+test_routes (__main__.Contract.test_routes) ... ok
+test_security (__main__.Contract.test_security) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "FAIL validation",
+    "expected": "No total; recovery"
+  },
+  {
+    "scenario": "PASS but accuracy 1",
+    "expected": "Return to validation; no total"
+  },
+  {
+    "scenario": "PASS with all ratings 2",
+    "expected": "12 Excellent Accept"
+  },
+  {
+    "scenario": "Eligible total 8",
+    "expected": "Refine and revalidate"
+  },
+  {
+    "scenario": "Unknown reliability",
+    "expected": "No aggregate until evidence"
+  },
+  {
+    "scenario": "Missing design history",
+    "expected": "Report limitation; no fabricated uniqueness"
+  }
+]

@@ -1,0 +1,3 @@
+# Release 1.0.0
+
+Owner-approved INT-001: integrated Workflow Engine v1.0.1 blocks automated retries without Failure Handler. Registry and pinned test baseline updated; original hash retained. INT-002: added compatibility reference at codex/workflow/state_manager.md; all 14 templates remain byte-identical. Original standalone archives unchanged. Integration documentation updated. Static checks and reference contract tests rerun; four negative fixtures detected. No live behavioral, host or production enforcement tests executed. The static suite is targeted, not exhaustive semantic verification. Component-local historical version labels and results may refer to preassembly packages; root release notes and current integration results govern this distribution.

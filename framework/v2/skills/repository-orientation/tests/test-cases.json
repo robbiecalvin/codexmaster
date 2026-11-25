@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "scenario": "Existing utility",
+    "expected": "Locate and assess utility before proposing new logic."
+  },
+  {
+    "id": 2,
+    "scenario": "Dirty working tree",
+    "expected": "Preserve unrelated changes and record revision."
+  },
+  {
+    "id": 3,
+    "scenario": "No repository access",
+    "expected": "Report missing access; do not invent paths."
+  },
+  {
+    "id": 4,
+    "scenario": "Dynamic imports",
+    "expected": "Mark uncertain dependencies and propose checks."
+  },
+  {
+    "id": 5,
+    "scenario": "Changed revision",
+    "expected": "Refresh affected findings and evidence."
+  },
+  {
+    "id": 6,
+    "scenario": "Failing tests",
+    "expected": "Report failure and hand off to Failure Handler."
+  }
+]

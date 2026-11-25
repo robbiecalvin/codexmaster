@@ -1,0 +1,33 @@
+{
+  "agent": {
+    "name": null,
+    "version": "1.0.0",
+    "category": null,
+    "purpose": null,
+    "status": "Optional",
+    "inputs": [],
+    "outputs": [],
+    "constraints": [],
+    "capabilities": [],
+    "dependencies": [],
+    "permissions": [],
+    "failure_modes": [],
+    "integration_points": [],
+    "validation_requirements": [],
+    "activation_conditions": [],
+    "deactivation_conditions": []
+  },
+  "handoff": {
+    "task_id": null,
+    "route_revision": null,
+    "from": null,
+    "to": null,
+    "contract_version": null,
+    "context_refs": [],
+    "instructions": [],
+    "outputs": [],
+    "evidence": [],
+    "unresolved_issues": [],
+    "status": null
+  }
+}

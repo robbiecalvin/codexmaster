@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "LOW task",
+    "expected": "Use selected route without extra stages"
+  },
+  {
+    "scenario": "Missing required validator",
+    "expected": "Report blocker or authorized local review with evidence"
+  },
+  {
+    "scenario": "Validation fail",
+    "expected": "Recover, no success claim"
+  },
+  {
+    "scenario": "Metrics refine",
+    "expected": "Repeat affected stages"
+  },
+  {
+    "scenario": "No configured gate",
+    "expected": "Do not claim machine enforcement"
+  },
+  {
+    "scenario": "Code edits without approval",
+    "expected": "Pause for approval"
+  }
+]

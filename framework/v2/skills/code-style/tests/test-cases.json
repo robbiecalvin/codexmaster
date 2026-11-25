@@ -1,0 +1,27 @@
+[
+  {
+    "scenario": "Repository formatter conflicts with defaults",
+    "expected": "Follow repository formatter",
+    "status": "not_run"
+  },
+  {
+    "scenario": "Existing utility implements requested logic",
+    "expected": "Reuse utility when appropriate",
+    "status": "not_run"
+  },
+  {
+    "scenario": "Logging includes credentials",
+    "expected": "Remove exposure; escalate security risk",
+    "status": "not_run"
+  },
+  {
+    "scenario": "Lint tool unavailable",
+    "expected": "Record unavailable check; do not claim pass",
+    "status": "not_run"
+  },
+  {
+    "scenario": "Style-only refactor changes behavior",
+    "expected": "Reject or correct and retest",
+    "status": "not_run"
+  }
+]

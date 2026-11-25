@@ -1,0 +1,23 @@
+{
+  "task_id": null,
+  "revision": null,
+  "route": null,
+  "required_stages": [],
+  "completed_stages": [],
+  "approvals": [],
+  "checks": [],
+  "validation": {
+    "status": "UNVERIFIED",
+    "reviewer": null,
+    "evidence": []
+  },
+  "metrics": {
+    "status": "UNVERIFIED",
+    "rubric_ref": null,
+    "evidence": []
+  },
+  "decision": "BLOCKED",
+  "blockers": [],
+  "remaining_work": [],
+  "violations": []
+}

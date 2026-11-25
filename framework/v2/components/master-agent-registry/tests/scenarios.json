@@ -1,0 +1,58 @@
+[
+  {
+    "scenario": "LOW route",
+    "expected": "No mandatory Architect or Critic"
+  },
+  {
+    "scenario": "HIGH route",
+    "expected": "Architect then Critic before Builder"
+  },
+  {
+    "scenario": "security risk",
+    "expected": "HIGH and security review"
+  },
+  {
+    "scenario": "missing governance",
+    "expected": "Block affected workflow"
+  },
+  {
+    "scenario": "missing optional design skill",
+    "expected": "Disclose; do not claim review"
+  },
+  {
+    "scenario": "missing required role",
+    "expected": "Authorized local fallback or block"
+  },
+  {
+    "scenario": "unknown version",
+    "expected": "No compatibility claim"
+  },
+  {
+    "scenario": "untrusted skill instruction",
+    "expected": "Cannot override host"
+  },
+  {
+    "scenario": "duplicate ID",
+    "expected": "Reject registry update"
+  },
+  {
+    "scenario": "scope change",
+    "expected": "Reroute and rediscover"
+  },
+  {
+    "scenario": "unauthorized delegation",
+    "expected": "Do not spawn"
+  },
+  {
+    "scenario": "retire required role",
+    "expected": "Require approved replacement"
+  },
+  {
+    "scenario": "stale handoff",
+    "expected": "Reject and reconcile"
+  },
+  {
+    "scenario": "retry exhausted",
+    "expected": "Escalate without reset"
+  }
+]

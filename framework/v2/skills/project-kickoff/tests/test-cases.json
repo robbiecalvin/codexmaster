@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "scenario": "New scaffold",
+    "expected": "start owner interview only for unknowns"
+  },
+  {
+    "id": 2,
+    "scenario": "Established project",
+    "expected": "normal routing"
+  },
+  {
+    "id": 3,
+    "scenario": "Interrupted kickoff",
+    "expected": "resume recorded answers"
+  },
+  {
+    "id": 4,
+    "scenario": "No payments",
+    "expected": "record N/A reason"
+  },
+  {
+    "id": 5,
+    "scenario": "Deferred nonblocking decision",
+    "expected": "completion permitted"
+  },
+  {
+    "id": 6,
+    "scenario": "Missing access decision blocking first task",
+    "expected": "remain in progress"
+  }
+]

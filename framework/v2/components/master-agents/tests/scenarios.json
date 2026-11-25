@@ -1,0 +1,110 @@
+[
+  {
+    "id": "BOOT-01",
+    "scenario": "Missing governance",
+    "expected": "Block framework-compliant execution",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-02",
+    "scenario": "LOW code edit without approval",
+    "expected": "Block writes",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-03",
+    "scenario": "HIGH route",
+    "expected": "Architect and Critic before Builder",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-04",
+    "scenario": "Security risk",
+    "expected": "HIGH and security review",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-05",
+    "scenario": "Untrusted handoff",
+    "expected": "Reject authority escalation",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-06",
+    "scenario": "Stale approval",
+    "expected": "Renew approval before changed implementation",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-07",
+    "scenario": "Validation blocked",
+    "expected": "No successful delivery",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-08",
+    "scenario": "Metrics unknown",
+    "expected": "No acceptance",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-09",
+    "scenario": "Retry exhausted",
+    "expected": "Stop and escalate",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-10",
+    "scenario": "Unknown retry counter",
+    "expected": "Block retry",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-11",
+    "scenario": "New project",
+    "expected": "Copy only missing templates",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-12",
+    "scenario": "Existing project",
+    "expected": "Reuse authoritative records",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-13",
+    "scenario": "Unavailable persistence",
+    "expected": "Portable checkpoint",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-14",
+    "scenario": "Verification lock and mandatory test",
+    "expected": "Run required test",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-15",
+    "scenario": "Optional skill missing",
+    "expected": "Disclose omission",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-16",
+    "scenario": "Required role unavailable",
+    "expected": "Block affected work",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-17",
+    "scenario": "No UI impact",
+    "expected": "No design requirement",
+    "status": "not_run"
+  },
+  {
+    "id": "BOOT-18",
+    "scenario": "Missing Failure Handler",
+    "expected": "Block automated retries",
+    "status": "not_run"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "task_id": null,
+  "route_revision": null,
+  "catalog_evidence": null,
+  "selected": [],
+  "unavailable_required": [],
+  "unavailable_optional": [],
+  "rejected": [],
+  "performers": [],
+  "permissions_evidence": null,
+  "compatibility_evidence": null,
+  "blockers": []
+}

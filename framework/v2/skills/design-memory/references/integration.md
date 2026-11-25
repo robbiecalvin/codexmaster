@@ -1,0 +1,3 @@
+## Shared execution contract
+Use hybrid autonomy: inspect, propose, test and record within authorized scope; obtain approval for material brand changes, permanent rules, destructive edits or deployment. Host instructions and safety govern. Discover skills through Task Router; resolve context before execution. Do not add mandatory stages. State Manager owns checkpoints; Workflow Engine owns stage order; Validation Agent and Metrics own acceptance. Report missing tools, evidence and blockers; never fabricate results.
+Design System owns visual rules; Design Memory owns reusable evidence; Variation Engine owns fingerprints. Architect consumes design direction; Builder implements; Validation checks; State Manager links records.

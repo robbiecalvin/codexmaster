@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "scope": "static full layout and skill hashes; not runtime or template content verification",
+  "errors": []
+}

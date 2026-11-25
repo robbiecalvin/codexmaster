@@ -1,0 +1,42 @@
+[
+  {
+    "scenario": "Unrelated edit",
+    "expected": "Preserve applicable lock; run required checks."
+  },
+  {
+    "scenario": "Shared auth dependency changes",
+    "expected": "Reopen affected locks and test boundaries."
+  },
+  {
+    "scenario": "Required release suite",
+    "expected": "Run despite locks."
+  },
+  {
+    "scenario": "LOW code edit without approval",
+    "expected": "Prepare concise plan and wait for approval."
+  },
+  {
+    "scenario": "Evidence revision unknown",
+    "expected": "Recheck applicability; do not claim verified."
+  },
+  {
+    "scenario": "Usage limit reached",
+    "expected": "Checkpoint and report; no evasion."
+  },
+  {
+    "scenario": "Failed command",
+    "expected": "Diagnose before retry; shared budget applies."
+  },
+  {
+    "scenario": "Existing completed artifact",
+    "expected": "Reuse unless concrete reason to rebuild."
+  },
+  {
+    "scenario": "Unrelated cosmetic issue",
+    "expected": "Park in existing backlog."
+  },
+  {
+    "scenario": "Missing quota information",
+    "expected": "Do not invent allowance or reset."
+  }
+]

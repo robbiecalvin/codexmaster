@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "scenario": "Builder reviews own output",
+    "expected": "self-review"
+  },
+  {
+    "id": 2,
+    "scenario": "Required test fails",
+    "expected": "FAIL"
+  },
+  {
+    "id": 3,
+    "scenario": "Required check unavailable",
+    "expected": "BLOCKED"
+  },
+  {
+    "id": 4,
+    "scenario": "Optional check unavailable",
+    "expected": "disclose, PASS if all requirements met"
+  },
+  {
+    "id": 5,
+    "scenario": "Targeted UI",
+    "expected": "baseline consistency"
+  },
+  {
+    "id": 6,
+    "scenario": "New UI",
+    "expected": "differentiation review"
+  },
+  {
+    "id": 7,
+    "scenario": "Changed revision",
+    "expected": "invalidate affected evidence"
+  },
+  {
+    "id": 8,
+    "scenario": "PASS",
+    "expected": "proceed to Metrics, not final delivery"
+  }
+]

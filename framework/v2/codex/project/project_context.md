@@ -1,0 +1,596 @@
+# [Application name] — Project Context
+
+**Owner** [Role]  
+**Scope and revision** [Milestone or version]  
+**Status and review date** [Draft / Approved / Verified, date]
+
+Complete each applicable section with project-specific values and evidence. The detailed reference material describes an illustrative marketplace. Adapt its actors, rules, tools, limits, and workflows to your project. Mark inapplicable sections with a short reason. Treat unapproved choices as proposed or pending.
+
+## Quick-start worksheet
+
+**Owner and review date** [Role, date]  
+**Current stage** [Discovery / Prototype / Beta / Production]
+
+### Project identity and goal
+
+Record the working and public names, target audience, problem, intended outcome, and how success will be measured. Link to the authoritative product specification if one exists.
+
+### Participants and access
+
+| Participant | Goal | Main actions | Access and constraints |
+| --- | --- | --- | --- |
+| [Visitor, member, operator, or partner] | [Goal] | [Actions] | [Permissions and eligibility] |
+
+### Product structure and business model
+
+Describe the core entities, surfaces, and end-to-end journeys. Document which actions are public, gated, paid, or manually reviewed. If applicable, summarize offers, entitlements, user communications, bookings and exceptions. Link the sources of truth for legal terms, rates, access rules and transaction states.
+
+### Design and content collaboration
+
+Describe the design workflow, reviewers, design sources, page naming, accessibility expectations, content ownership and where policies and eligibility notices appear. Use [Page Inventory](page_inventory.md) for the page-level record.
+
+### Technical direction and constraints
+
+Record confirmed choices for runtime, source control, infrastructure and deployment. Summarize privacy, security, provider and operational constraints. Note what the architecture should remain adaptable to and the scope currently deferred. See [Application Architecture](application_architecture.md) and [Application Security](application_security.md).
+
+### Decisions and current progress
+
+Record material unresolved decisions in the [Decision Register](decisions.md). Summarize completed, in-progress, and blocked work with evidence and an as-of date. Link near-term priorities, owners, and acceptance criteria in [Next Steps](next_steps.md).
+
+## Detailed template
+
+Use these fields for the detailed records in this document.
+
+| Project fact or constraint | Applicable release | Owner | Source or decision | Current status or next action |
+| --- | --- | --- | --- | --- |
+| [Fill in] | [Fill in] | [Fill in] | [Fill in] | [Fill in] |
+
+### 1. Purpose
+
+Record the actual release, what is applicable today, what remains proposed or deferred, and the latest supporting reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+This document provides the essential context needed to work on [Application name].
+
+Read it alongside:
+
+- [Root Instructions]
+- [README]
+- [Next Steps](next_steps.md)
+- [Decisions](decisions.md)
+
+Detailed requirements belong in their dedicated documents.
+
+This file describes the project direction.
+It does not establish implementation, approval, or deployment status.
+
+### 2. Project Identity
+
+For **project identity**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+- Name: [Application name].
+- Product owner and visual decision-maker: [Decision owner].
+- Product type: Social provider marketplace.
+- Current release scope: Paid [permitted services] and social experiences.
+- Development approach: Page-by-page implementation with ongoing review.
+- Primary editor: VS Code.
+- Source control: Git and GitHub.
+
+The name does not constitute a guarantee of anonymity, confidentiality,
+identity verification, or participant safety.
+
+Do not make unsupported privacy or security claims in product copy.
+
+### 3. Product Goal
+
+For **product goal**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Help users discover providers, understand their interests and offerings,
+and arrange clearly defined social experiences.
+
+Examples include:
+
+- Coffee and conversation.
+- Dinner.
+- Concerts and live music.
+- Cinema and theatre.
+- Cultural outings.
+- Sightseeing.
+- Shopping.
+- Celebrations.
+- Formal events.
+- Other approved activities.
+
+The platform combines discovery, profiles, subscriptions,
+communication, bookings, and advertising.
+
+### 4. Participants
+
+#### Visitors
+
+For **visitors**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Browse public listings and public profile information after the
+entrance age confirmation.
+
+#### Registered Users
+
+For **registered users**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Create profiles, manage [request listing] posts, and purchase optional
+memberships or individual provider subscriptions.
+
+#### Providers
+
+For **providers**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Create presentations, publish profiles, advertise offerings,
+manage availability, communicate, and respond to booking requests.
+
+#### Moderators and Administrators
+
+For **moderators and administrators**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Perform specifically authorized review and operational functions.
+
+Whether one account may act as both user and provider remains
+to be confirmed.
+
+### 5. Core Product Structure
+
+#### [request listing]
+
+For **[request listing]**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Users describe an activity or social experience they want company for.
+
+Posts link to the user’s profile.
+
+#### [offer listing]
+
+For **[offer listing]**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Providers advertise their experiences and link to their profiles.
+
+Public ads must not expose member-only or subscriber-only information.
+
+#### Provider Profiles
+
+For **provider profiles**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Profiles support:
+
+- Public introduction.
+- Member-only details.
+- Subscriber-only media and experience information.
+- Rates.
+- Availability.
+- Reviews.
+- Communication and booking access.
+
+#### Two Presentations
+
+For **two presentations**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+A provider may have up to two presentations under one account.
+
+They may differ in content, media, style, offerings, and rates.
+
+They share ownership, publishing association, and enforcement history.
+
+Whether one subscription unlocks both presentations remains
+a proposed rule requiring confirmation.
+
+### 6. Commercial Model
+
+For **commercial model**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+[Application name] has separate purchase types:
+
+1. Provider publishing plans.
+2. Individual provider subscriptions.
+3. Premium user membership.
+4. Advertising purchases and upgrades.
+5. Booking payments.
+
+These purchases must remain distinguishable in the interface,
+backend permissions, and financial records.
+
+Key distinctions:
+
+- Premium user membership provides posting benefits.
+- An individual subscription unlocks the specified provider’s access.
+- A subscription does not include the separately priced date.
+- Publishing enables profile and advertising eligibility.
+- No purchase grants administrative privileges.
+
+Authoritative prices and financial rules belong in:
+
+[Pricing and Payments](pricing_and_payments.md)
+
+Do not maintain a competing price list in this document.
+
+### 7. Access Model
+
+List the actors, allowed actions, restricted fields, enforcement points, and what happens when access is denied, expires, or is revoked.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+The platform distinguishes:
+
+- Public information.
+- Registered-member information.
+- Subscriber-only information.
+- Owner-only management.
+- Authorized moderation and administration.
+
+Backend authorization must enforce these boundaries.
+
+Subscription access is provider-specific.
+
+The browser must not receive restricted information merely to conceal
+it with interface styling.
+
+Detailed permissions belong in:
+
+[Access Matrix](access_matrix.md)
+
+### 8. Communication and Booking
+
+Record allowed transitions, responsible actors, guards, timeouts, side effects, and conflicts.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Individual provider subscriptions are intended to unlock:
+
+- Direct messages.
+- Photo and video messages.
+- Read receipts and timestamps.
+- Audio calls.
+- Video calls.
+- Booking requests.
+
+Bookings include agreed activities, schedule, duration, venue,
+price, and applicable expenses.
+
+The provider can accept, decline, or propose revisions.
+
+The proposed financial interpretation uses one [rate] deposit after
+acceptance, credited toward the booking total.
+
+That interpretation is not yet confirmed.
+
+Do not assume a separate request fee is also charged.
+
+Detailed rules belong in:
+
+- [Product Specification](product_spec.md)
+- [Booking Lifecycle](booking_lifecycle.md)
+- [Pricing and Payments](pricing_and_payments.md)
+
+### 9. Design Collaboration
+
+For **design collaboration**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Visual decisions develop during production.
+
+Before building a new page, Codex asks focused questions about
+the unresolved choices for that page.
+
+Carry forward existing approved decisions.
+
+Do not:
+
+- Require the entire site to be designed upfront.
+- Repeat settled branding questions on every page.
+- Force unusual layouts for novelty.
+- Treat an approved design as permanently fixed.
+- Repeat the full questionnaire for a clear edit request.
+
+[Decision owner] may revisit and revise any page.
+
+Use:
+
+- [Design System]
+- [Design Memory]
+- [Page Inventory](page_inventory.md)
+- Individual page briefs.
+
+Do not assume previously generated images establish approved
+design choices unless [Decision owner] identifies them as the reference.
+
+### 10. Copy and Guidelines Placement
+
+For **copy and guidelines placement**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Keep normal pages focused on discovery, people, activities,
+subscriptions, and bookings.
+
+Consolidate detailed eligibility, boundaries, prohibited conduct,
+and general safety explanations into one standalone page:
+
+Community Guidelines & Boundaries
+
+Do not fill ordinary pages with repeated disclaimers.
+
+Keep necessary transaction-specific information visible,
+including prices, renewal terms, subscription scope,
+deposit treatment, and cancellation terms.
+
+Separate Terms and Privacy documents may serve their actual purposes
+without duplicating the guidelines essay.
+
+### 11. Entrance Age Gate
+
+For **entrance age gate**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Show a concise entrance age confirmation before normal browsing.
+
+Requirements include:
+
+- An “I am 18 or older” action.
+- An exit action.
+- Accessible interaction.
+- Direct-link coverage.
+- Preservation of the intended destination.
+- A retention period still to be selected.
+
+Entrance confirmation is self-attestation.
+
+It does not replace backend eligibility checks or identity verification.
+It does not establish authorization for protected features.
+
+### 12. Technical Direction
+
+For **technical direction**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+The approved frontend direction is:
+
+- HTML.
+- CSS.
+- JavaScript ES modules.
+- Shared components.
+- Responsive layouts.
+- Accessible controls.
+- Minimal justified dependencies.
+
+A lightweight build tool may be selected when useful.
+
+Backend functionality is required for accounts, permissions,
+private media, payments, bookings, communication, and administration.
+
+No backend provider or runtime is established by this document.
+
+Provider decisions must be recorded explicitly.
+
+See:
+
+- [Application Architecture](application_architecture.md)
+- [Environment]
+- [Repository Map]
+
+### 13. Source Control and Deployment
+
+Record prerequisites, deliverables, owners, dependencies, and the smallest independently verifiable result.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+The intended workflow is:
+
+VS Code → Local preview → Relevant checks → GitHub → Deployment
+
+GitHub is the source repository host.
+
+GitHub Pages is not the production hosting target for the
+commercial marketplace.
+
+Choose an appropriate production host and document its configuration.
+
+Local, preview, and production environments must remain appropriately
+separated.
+
+A successful push does not prove deployment succeeded.
+
+### 14. Privacy and Security Constraints
+
+For **privacy and security constraints**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Do not place the following in public source or frontend bundles:
+
+- Secret credentials.
+- Private messages.
+- Restricted media originals.
+- Real customer datasets.
+- Administrative tokens.
+- Payment secrets.
+
+Enforce ownership, visibility, and entitlements on the backend.
+
+Use synthetic data for development where appropriate.
+
+Do not claim that an account, subscription, payment, or verification badge
+guarantees trustworthiness or safety.
+
+Detailed application controls belong in:
+
+[Application Security](application_security.md)
+
+### 15. Future Adaptability
+
+For **future adaptability**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+[Decision owner] has indicated that the platform’s content scope may change later.
+
+The current release remains the platonic service described here.
+
+Keep category definitions, profile-field definitions, and content policy
+reasonably separate from marketplace mechanics.
+
+Do not:
+
+- Implement unspecified future features.
+- Build a hidden alternative service.
+- Misrepresent the operating model to providers.
+- Assume current provider suitability extends to a changed business.
+
+A future scope change requires explicit revised requirements and
+reassessment of affected services and operations.
+
+### 16. Open Decisions
+
+Record the unresolved question, viable options, decision owner, required evidence, and work blocked by the decision.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Record detailed status in ./decisions.md.
+
+Current unresolved areas include:
+
+- Launch region and currency.
+- Domain and brand assets.
+- Global visual direction.
+- Backend and hosting providers.
+- Payment and payout provider suitability.
+- Single-deposit interpretation.
+- Remaining booking balance collection.
+- Refund and cancellation calculations.
+- Taxes, processing costs, and payout timing.
+- Account role combinations.
+- Subscription access across both presentations.
+- Entitlements after publishing expiry.
+- Historical message access after subscription expiry.
+- Free-post allowance interpretation.
+- Unspecified advertising-upgrade durations.
+- Age-confirmation retention.
+- Verification approach.
+
+Resolve decisions when they affect the next implementation step.
+
+Do not block independent work unnecessarily.
+
+### 17. Current Progress
+
+Record the actual release, what is applicable today, what remains proposed or deferred, and the latest supporting reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Implementation and review status belong in:
+
+[Next Steps](next_steps.md)
+
+Documents drafted in conversation are not proof they have been saved,
+committed, or pushed.
+
+Do not claim repository changes occurred without verification.
+
+### 18. Working Priorities
+
+Record prerequisites, deliverables, owners, dependencies, and the smallest independently verifiable result.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+1. Preserve the agreed product and payment-gate structure.
+2. Build reviewable increments.
+3. Follow [Decision owner]’s visual direction.
+4. Keep financial and permission rules explicit.
+5. Distinguish prototypes from integrations.
+6. Verify consequential behaviour.
+7. Maintain accurate progress and decisions.
+
+### 19. Final Rule
+
+For **final rule**, record the applicable rule or design, its owner, exceptions, and a reference.
+
+**Project record** [Fill in, or mark N/A with a reason.]
+
+**Illustrative reference and adaptation checklist**
+
+Use this document to orient work quickly.
+
+Consult the detailed specification for implementation rules.
+Consult the roadmap for actual progress.
+Consult [Decision owner] when a material unresolved decision is required.
+

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "change-planner-1",
+    "scenario": "LOW code change without approval",
+    "expected": "block writes",
+    "status": "not_run"
+  },
+  {
+    "id": "change-planner-2",
+    "scenario": "Multi-file signature change",
+    "expected": "map all callers and require explicit authorization",
+    "status": "not_run"
+  },
+  {
+    "id": "change-planner-3",
+    "scenario": "Unreproduced bug",
+    "expected": "block corrective edits",
+    "status": "not_run"
+  },
+  {
+    "id": "change-planner-4",
+    "scenario": "Metric improvement without baseline",
+    "expected": "report missing evidence",
+    "status": "not_run"
+  },
+  {
+    "id": "change-planner-5",
+    "scenario": "Targeted UI edit",
+    "expected": "preserve existing identity and map impact",
+    "status": "not_run"
+  },
+  {
+    "id": "change-planner-6",
+    "scenario": "Scope changes after approval",
+    "expected": "invalidate approval and replan",
+    "status": "not_run"
+  }
+]

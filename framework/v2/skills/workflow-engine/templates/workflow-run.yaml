@@ -1,0 +1,9 @@
+workflow_run:
+  task_id: null
+  route_revision: null
+  status: pending
+  stages: [] # ordered entries: name, status, input_refs, output_refs, evidence_refs
+  validation: null
+  metrics_decision: null
+  blockers: []
+  next_action: null

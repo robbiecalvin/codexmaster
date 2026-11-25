@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "low route",
+    "expected": "No Architect or Critic required; context precedes Builder"
+  },
+  {
+    "scenario": "high security risk",
+    "expected": "Critic security review before Builder"
+  },
+  {
+    "scenario": "validation blocked",
+    "expected": "No successful delivery or metrics acceptance"
+  },
+  {
+    "scenario": "metrics refine",
+    "expected": "Correct output and repeat validation"
+  },
+  {
+    "scenario": "scope changes",
+    "expected": "Reroute and invalidate affected downstream stages"
+  },
+  {
+    "scenario": "missing retry policy",
+    "expected": "Bound recovery and report blocker"
+  }
+]

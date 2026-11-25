@@ -1,0 +1,23 @@
+{
+  "handoff_id": null,
+  "task_id": null,
+  "route_revision": null,
+  "artifact_revision": null,
+  "contract_version": "1.0.0",
+  "sender": null,
+  "receiver": null,
+  "performer": null,
+  "reviewer_type": null,
+  "stage": null,
+  "objective": null,
+  "requirements_refs": [],
+  "decision_refs": [],
+  "artifact_refs": [],
+  "evidence_refs": [],
+  "authorization_ref": null,
+  "blockers": [],
+  "retry_counter_ref": null,
+  "next_action": null,
+  "status": "proposed",
+  "receiver_reason": null
+}

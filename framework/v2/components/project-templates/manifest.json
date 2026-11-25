@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "templates": [
+    {
+      "path": "codex/project/access_matrix.md",
+      "sha256": "9d5443586ec90e14ea9597a16c90d8f987a9af2f917d70f4a09509c695684805",
+      "bytes": 28163
+    },
+    {
+      "path": "codex/project/application_architecture.md",
+      "sha256": "ffff3f519a7c5f1799eb9ca7c55ab7de60e8f7ee89b6ca735936e7ee7ec07a2f",
+      "bytes": 31544
+    },
+    {
+      "path": "codex/project/application_diagram.md",
+      "sha256": "60241e6dab93511fed5c794bf6bc4602dcdafd844668bb0fedf2df080f88195a",
+      "bytes": 19939
+    },
+    {
+      "path": "codex/project/application_security.md",
+      "sha256": "37e057ed8731889bd9e2cffae2a641abe6816657b8906da2de133168278abcd7",
+      "bytes": 27979
+    },
+    {
+      "path": "codex/project/booking_lifecycle.md",
+      "sha256": "e44c83f331cdca16e7d4a9d701d7000a50e6b5329d79d73b84da9c15903ee6e7",
+      "bytes": 28937
+    },
+    {
+      "path": "codex/project/data_model.md",
+      "sha256": "2bffeff73d83ac2fe978d5e262aaef450125fa86c0ff96030b5e79742b21c7db",
+      "bytes": 43250
+    },
+    {
+      "path": "codex/project/decisions.md",
+      "sha256": "05f695b0541acd076ea55168dc7e4ef814dbd852719e1d2717dde937d9ce94e1",
+      "bytes": 22909
+    },
+    {
+      "path": "codex/project/deployment.md",
+      "sha256": "67cde519ec31d12ce9137f33c8135b51e667b41ba85b9a0501579c0a23ef6b04",
+      "bytes": 23820
+    },
+    {
+      "path": "codex/project/launch_acceptance.md",
+      "sha256": "7485538ad28c4e65c56fac2a9ea01bc8c46eccc3188062dcffe8a3cb44de62bf",
+      "bytes": 27575
+    },
+    {
+      "path": "codex/project/next_steps.md",
+      "sha256": "a2b79894e9024a12739359819adfa6d4683c2cb3cec4ffb9d465e4454c7005a1",
+      "bytes": 34634
+    },
+    {
+      "path": "codex/project/page_inventory.md",
+      "sha256": "f9db1d5ed1c87ef98663bb8f9194b4492bfd2ccffe12d6a61b8724fe17cd71db",
+      "bytes": 23929
+    },
+    {
+      "path": "codex/project/pricing_and_payments.md",
+      "sha256": "01937d422f067a7b0c991285620840dfe93c393b3c0ea40afac91a749f12c6dd",
+      "bytes": 31478
+    },
+    {
+      "path": "codex/project/product_spec.md",
+      "sha256": "8cec93ae55682ac9425fe1e100d7d906773d0c91afb351c8710e799a06930a54",
+      "bytes": 36371
+    },
+    {
+      "path": "codex/project/project_context.md",
+      "sha256": "26fcb0e7242727ff4d4e75c8e6bf2bb4e4c1c9078a53e172c321024c70a36292",
+      "bytes": 18900
+    }
+  ],
+  "external_links": [
+    "../workflow/state_manager.md#save-a-checkpoint"
+  ],
+  "document_link_occurrences": 135
+}

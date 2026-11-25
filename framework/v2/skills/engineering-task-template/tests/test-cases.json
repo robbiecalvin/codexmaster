@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "scenario": "LOW code edit",
+    "expected": "concise approved plan"
+  },
+  {
+    "id": 2,
+    "scenario": "Bug without root cause",
+    "expected": "block edits"
+  },
+  {
+    "id": 3,
+    "scenario": "Targeted UI change",
+    "expected": "preserve identity"
+  },
+  {
+    "id": 4,
+    "scenario": "Backend only",
+    "expected": "design not applicable"
+  },
+  {
+    "id": 5,
+    "scenario": "Required full suite unavailable",
+    "expected": "blocked"
+  },
+  {
+    "id": 6,
+    "scenario": "Validation PASS but Metrics Refine",
+    "expected": "not complete"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "scenario": "LOW route",
+    "expected": "Do not add Architect or Critic as mandatory stages."
+  },
+  {
+    "id": 2,
+    "scenario": "Validation blocked",
+    "expected": "No success path; recovery or blocker report."
+  },
+  {
+    "id": 3,
+    "scenario": "Metrics refine",
+    "expected": "Return to affected stage and repeat validation."
+  },
+  {
+    "id": 4,
+    "scenario": "Diagram without runtime evidence",
+    "expected": "Label documented only."
+  },
+  {
+    "id": 5,
+    "scenario": "Conflicting routing documents",
+    "expected": "Cite conflict and defer to authoritative router."
+  },
+  {
+    "id": 6,
+    "scenario": "Prompt-independent failure",
+    "expected": "Do not trigger prompt optimization."
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "architect-1",
+    "input": "large cohesive file",
+    "expected": "Review cohesion; do not split solely by size"
+  },
+  {
+    "id": "architect-2",
+    "input": "domain imports database driver",
+    "expected": "Propose inward dependency boundary"
+  },
+  {
+    "id": "architect-3",
+    "input": "HIGH route",
+    "expected": "Send plan to Critic before Builder"
+  },
+  {
+    "id": "architect-4",
+    "input": "breaking API change",
+    "expected": "Require explicit approval"
+  }
+]
