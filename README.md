@@ -20,3 +20,8 @@ The documentation requires explicit inputs, outputs, constraints and failure mod
 ## Status
 
 This repository is a framework and documentation project. Its specifications do not by themselves demonstrate runtime orchestration, model training, benchmark performance or production readiness.
+
+
+## Technical portfolio case study
+
+[Read the technical case study](CASE_STUDY.md) for the problem, architecture, engineering decisions, evaluation evidence and limitations.
