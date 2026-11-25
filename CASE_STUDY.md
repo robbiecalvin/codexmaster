@@ -30,6 +30,14 @@ The acceptance example separates status, environment, method and evidence. Faile
 ## Next steps
 Build a reproducible execution harness and evaluate identical tasks with and without the framework using independent acceptance tests.
 
+## Reproducible fixture demonstration
+
+Use the sample acceptance record in `docs/development/launch_acceptance.md`, then run the governance contract checks. The expected result is three passing checks covering truth constraints, repository and testing constraints, and the presence of the reference documents. The demo exercises configuration and documentation. Runtime agent execution is outside this scenario.
+
+```sh
+python -m unittest discover -s tests -v
+```
+
 ## Resume summary
 Designed an AI-assisted engineering governance framework with modular agent responsibilities, explicit constraints and evidence-based acceptance criteria.
 
