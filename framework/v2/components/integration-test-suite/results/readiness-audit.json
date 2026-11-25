@@ -2,8 +2,8 @@
   "status": "PENDING_VERIFICATION",
   "live_tests": "NOT_RUN",
   "findings": {
-    "A01": "CORRECTIVE_CHANGES_PENDING_VERIFICATION",
-    "A02": "CORRECTIVE_CHANGES_PENDING_VERIFICATION",
+    "A01": "PARTIAL_REVIEWER_ASSERTIONS_NOT_MACHINE_VERIFIED",
+    "A02": "ADDITIONAL_FIXTURES_PENDING_CI",
     "A03": "OFFLINE_REVIEWED",
     "A04": "OFFLINE_REVIEWED",
     "A05": "OFFLINE_REVIEWED",
@@ -11,11 +11,11 @@
     "A07": "OFFLINE_REVIEWED",
     "A08": "OFFLINE_REVIEWED",
     "A09": "OFFLINE_REVIEWED",
-    "A10": "CORRECTIVE_CHANGES_PENDING_VERIFICATION",
+    "A10": "OFFLINE_REVIEWED",
     "A11": "OFFLINE_REVIEWED",
-    "A12": "CORRECTIVE_CHANGES_PENDING_VERIFICATION",
+    "A12": "PARTIAL_NESTED_VALIDATION",
     "A13": "OFFLINE_REVIEWED",
     "A14": "OFFLINE_REVIEWED"
   },
-  "notes": "Prior revision CI passed. Current changes require CI and substantive review. Evidence hashes and declared kinds do not authenticate reviewer judgment."
+  "notes": "CI passed at b4501da. Additional scenario inputs and prompt isolation require verification. Host constraints must be verified on actual host; fixture declarations are not proof."
 }

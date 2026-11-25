@@ -34,4 +34,13 @@ class Fixtures(unittest.TestCase):
         from fixtures import material
         item=next(r for r in catalog() if r["id"]=="B16")
         self.assertIsNone(json.loads(material(item)[0]["retry.json"])["attempts"])
+    def test_specific_inputs(self):
+        from fixtures import material
+        items={r["id"]:r for r in catalog()}
+        for scenario,name in (("B01","arithmetic.py"),("B07","critic.json"),("B11","required-check.json"),("B19","release-check.py"),("B27","host-requirements.json")):
+            self.assertIn(name,material(items[scenario])[0])
+    def test_benchmark_prompt_excludes_acceptance(self):
+        from fixtures import material
+        item=next(r for r in catalog() if r["id"]=="P01")
+        self.assertNotIn(item["acceptance"],material(item)[1]["prompt"])
 if __name__=="__main__": unittest.main()
